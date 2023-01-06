@@ -1,6 +1,6 @@
 # Programa de Bolsas da Compass UOL
 
-O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprendizagem de  diferentes **tecnologias** e **metodologias** aplicadas em projetos de dados utilizando os **serviços de nuvem da AWS** como plataforma. 
+O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprendizagem de  diferentes **tecnologias** e **metodologias** aplicadas em **projetos de dados** utilizando os **serviços de nuvem da AWS** como plataforma. 
 
 *Os conteúdos são organizados em 10 Sprints, cada qual com duração de 14 dias.*
 
