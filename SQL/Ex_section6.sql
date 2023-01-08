@@ -13,9 +13,6 @@ order by acessos desc
 
 -- (Exercício 2) Identifique quais as lojas de veículo mais visitadas na tabela sales.funnel
 
-select * from sales.stores
-select * from sales.funnel
-
 select
 		lojas.store_name,
 		count(fun.visit_page_date) as visitas
@@ -27,13 +24,13 @@ order by visitas desc
 
 -- (Exercício 3) Identifique quantos clientes moram em cada tamanho de cidade (o porte da cidade
 -- consta na coluna "size" da tabela temp_tables.regions)
-select * from sales.customers
-select * from temp_tables.regions
--- Ainda não finalizei
+
 select
-		region.size,
-		count(client.city) as contagem
-from sales.customers as client
-left join temp_tables.regions as region
-		on client.city = region.city
-group by region.size
+		reg.size,
+		count(cl.city) as contagem
+from sales.customers as cl
+left join temp_tables.regions as reg
+		on lower(cl.city) = lower(reg.city)
+		and lower(cl.state) = lower(reg.state)
+group by reg.size
+order by contagem
