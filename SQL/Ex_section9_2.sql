@@ -24,3 +24,8 @@ group by salarios
 -- Crie uma coluna chamada populacao_ajustada na tabela temp_tables.regions e
 -- preencha com os dados da coluna population, mas caso esse campo estiver nulo, 
 -- preencha com a população média (geral) das cidades do Brasil
+
+select 
+	*, 
+	coalesce(population, (select avg(population) from temp_tables.regions)) as "população média"
+from temp_tables.regions as reg
