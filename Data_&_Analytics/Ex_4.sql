@@ -9,16 +9,11 @@ select
 	au.nome,	
 	au.codautor,
 	au.nascimento,
-	count(*) as quantidade
-from livro as li
+	count(li.autor) as quantidade
+from autor as au
 
-left join autor as au
+left join livro as li
 	on li.autor = au.codautor
 
 group by au.nome, au.codautor, au.nascimento
 order by au.nome
-
-select * from livro
-order by autor
-select * from autor 
-order by codautor
