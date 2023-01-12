@@ -4,6 +4,6 @@
 
 ![Biblioteca](Biblioteca.png)
 
-* Do Ex 8 ao Ex 16 está sendo usada a base dados da Biblioteca ilustrada a imagem a seguir:
+* Do Ex 8 ao Ex 16 está sendo usada a base dados da Loja ilustrada a imagem a seguir:
 
 ![Loja](Loja.png)
