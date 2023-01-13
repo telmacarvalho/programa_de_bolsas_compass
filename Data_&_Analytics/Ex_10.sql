@@ -18,5 +18,5 @@ from tbvendedor as t
 left join tbvendas t2
     on  t.cdvdd = t2.cdvdd
 where status = 'Concluído'
-group by t.nmvdd--, valor_total_vendas, comissao
+group by t.nmvdd, valor_total_vendas, comissao
 order by comissao desc
