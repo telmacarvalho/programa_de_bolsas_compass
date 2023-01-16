@@ -13,11 +13,12 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 ## SRINT 2
 
-- [ ] Data & Analytics - PB - AWS 2/10 - Conceitos I
+- [x] Data & Analytics - PB - AWS 2/10 - Conceitos I
 - [ ] O curso completo de Banco de Dados e SQL, sem mistérios!
 - [x] SQL para Análise de Dados: Do básico ao avançado
-- [ ] Data & Analytics - PB - AWS 2/10 - Exercícios I e Conceitos II *(in progress)*
-- [ ] Data & Analytics - PB - AWS 2/10 - Exercícios II
+- [x] Data & Analytics - PB - AWS 2/10 - Exercícios I e Conceitos II 
+- [ ] Big Data Fundamentos *(in progress)*
+- [x] Data & Analytics - PB - AWS 2/10 - Exercícios II
 
 ## SPRINT 3 
 
