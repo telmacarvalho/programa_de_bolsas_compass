@@ -1,4 +1,4 @@
---Tarefa da seção 6
+--Tarefa 1 da seção 6
 --
 --Considerando a base de dados Biblioteca apresentada na Seção 3, realize a exportação de dados (em formato .CSV) através do cliente SQL de sua preferência (DBeaver, VSCode...).  O layout dos arquivos, bem como os critérios de coleta de dados estão definidos em cada uma das questões da atividade.
 --
