@@ -18,7 +18,7 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] SQL para Análise de Dados: Do básico ao avançado
 - [x] Data & Analytics - PB - AWS 2/10 - Exercícios I e Conceitos II 
 - [ ] Big Data Fundamentos *(in progress)*
-- [x] Data & Analytics - PB - AWS 2/10 - Exercícios II
+- [ ] Data & Analytics - PB - AWS 2/10 - Exercícios II *(in progress)*
 
 ## SPRINT 3 
 
