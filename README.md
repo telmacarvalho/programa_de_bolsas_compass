@@ -17,10 +17,10 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [ ] O curso completo de Banco de Dados e SQL, sem mistérios!
 - [x] SQL para Análise de Dados: Do básico ao avançado
 - [x] Data & Analytics - PB - AWS 2/10 - Exercícios I e Conceitos II 
-- [ ] Big Data Fundamentos *(in progress)*
-- [ ] Data & Analytics - PB - AWS 2/10 - Exercícios II *(in progress)*
+- [x] Big Data Fundamentos 
+- [x] Data & Analytics - PB - AWS 2/10 - Exercícios II
 
 ## SPRINT 3 
 
-* Python 
-...
+- [ ] Programação em Python do básico ao avançado *(in progress)*
+- [ ] Data & Analytics - PB - AWS 3/10
