@@ -15,9 +15,9 @@ Classes podem conter:
     ela é branca, amarela, vermelha ou outra cor, qual a luminosidade e etc.
 
     - Métodos (funções) -> Representam os comportamentos do objeto.
-    Ou seja, as ações que este objeto pode realizar no seu sistema. 
-    No caso da lâmpada, por exemplo, um comportamento comum que muito 
-    provavelmente iríamos querer representar no nosso sistema é o de ligar e 
+    Ou seja, as ações que este objeto pode realizar no seu sistema.
+    No caso da lâmpada, por exemplo, um comportamento comum que muito
+    provavelmente iríamos querer representar no nosso sistema é o de ligar e
     desligar a mesma.
 
 Em Python, para definir uma classe utilziamos a palavra reseervada class.
@@ -26,8 +26,8 @@ Obs: Utilizamos a palavra 'pass' em Python quando temos um bloco de código que
 ainda não está implementado.
 
 Obs: Quando nomeamos nossas classes em Python utlizamos por convenção o nome
-com inicial em maiúsculo. Se o nome for composto, utliza-se as iniciais de 
-ambas as palavras em maiúsulo. Se o nome for composto, utiliza-se as iniciais 
+com inicial em maiúsculo. Se o nome for composto, utliza-se as iniciais de
+ambas as palavras em maiúsulo. Se o nome for composto, utiliza-se as iniciais
 de ambas as palavras em maiúculo,
 todas juntas.
 """
