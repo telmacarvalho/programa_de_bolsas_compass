@@ -161,9 +161,11 @@ p2 = Produto('Xbos S', 'Video game', 4500)
 p2.peso = '5kg'  # Note que na classe produto não existe o atributo peso.
 
 print(
-    f'Produto: {p2.nome}, Descrição: {p2.descricao}, Valor: {p2.valor}, Peso: {p2.peso}')
+    f'Produto: {p2.nome}, Descrição: {p2.descricao}, Valor: {p2.valor},\
+         Peso: {p2.peso}')
 
-# print(f'Produto: {p1.nome}, Descrição: {p1.descricao}, Valor: {p1.valor}, Peso: {p1.peso}')
+# print(f'Produto: {p1.nome}, Descrição: {p1.descricao}, Valor: {p1.valor},
+# Peso: {p1.peso}')
 
 # Deletando atributos
 
