@@ -43,6 +43,17 @@ print(user1.nome_completo())
 print(Usuario.nome_completo(user1))
 
 print(user2.nome_completo())
+
+# Métodos e Classe em Python são conhecidos como Métodos Estáticos
+em outras linguagens.
+
+# Métodos de classe
+
+user = Usuario('Felicity', 'Jones', 'felicity@gmail.com', '123456')
+
+Usuario.conta_usuarios()  # Forma correta
+user.conta_usuarios()  # Possível, mas incorreta
+
 """
 
 
@@ -84,13 +95,44 @@ class Produto:
 
 class Usuario:
 
+    contador = 0
+
+    @classmethod
+    def conta_usuarios(cls):
+        print(f'Temos {cls.contador} usuário(s) no sistema')
+
+    @classmethod
+    def ver(self):
+        print('Teste')
+
+    @staticmethod
+    def definicao():
+        return 'UXR344'
+
     def __init__(self, nome, sobrenome, email, senha):
+        self.__id = Usuario.contador + 1
         self.__nome = nome
         self.__sobrenome = sobrenome
         self.__email = email
         self.__senha = senha
+        Usuario.contador = self.__id
+        print(f'Usuário criado: {self.__gera_usuario()}')
 
     def nome_completo(self):
         return f'{self.__nome} {self.__sobrenome}'
 
-# Métodos de classe
+    def __gera_usuario(self):
+        return self.__email.split('@')[0]
+
+# Método Estático
+
+
+print(Usuario.contador)
+
+print(Usuario.definicao())
+
+user = Usuario('Felicity', 'Jones', 'felicity@gmail.com', '123456')
+
+print(user.contador)
+
+print(user.definicao)
