@@ -22,7 +22,7 @@ mágicos.
 ATENÇÃO! Por mais que possamos criar nossas próprias funções
 utilizando dunder (underline no início ao fim) não é aconselhado.
 Python possui vários métodos com esta forma de nomenclatura
-e pode ser que mudemos o comportamento dessas funções mágicas 
+e pode ser que mudemos o comportamento dessas funções mágicas
 internas da linguagem. Então, evite ao máximo. De preferência
 nunca o faça.
 
