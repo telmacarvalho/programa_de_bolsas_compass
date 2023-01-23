@@ -9,7 +9,7 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] Gestão de Projetos com Agile & Scrum: O Guia Definitivo
 - [x] Administração de Sistemas GNU/Linux: Fundamentos e Prática
 - [x] Git e GitHub do básico ao avançado (c/ gist e GitHub Pages)
-- [ ] Segurança em Aplicações WEB *(in progress)*
+- [x] Segurança em Aplicações WEB
 
 ## SRINT 2
 
