@@ -2,7 +2,8 @@
 
 * Data & Analytics
 
-Contém as tarefas de Data & Analytics - PB - AWS 3/10 das seções 3 a 8 da Udemy.
+Contém as tarefas de Data & Analytics - PB - AWS 3/10 das seções 3 a 8 da Udemy.\
+*Alguns scripts foram adaptados para serem aceitos na plataforma da Udemy*
 
 * Exemplos
 
