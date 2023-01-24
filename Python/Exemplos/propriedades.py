@@ -108,9 +108,9 @@ class Conta:
     def sacar(self, valor):
         self.__saldo -= valor
 
-    def transferir(self, valor):
-        self.__saldo -= valor
-        destino.__saldo += valor
+    # def transferir(self, valor):
+    #     self.__saldo -= valor
+    #     destino.__saldo += valor
 
     @property
     def valor_total(self):
