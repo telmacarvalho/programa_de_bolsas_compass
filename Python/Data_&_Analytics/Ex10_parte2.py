@@ -13,6 +13,7 @@ def nao_duplicados(lista):
     for elemento in lista:
         if elemento not in nova_lista:
             nova_lista.append(elemento)
+    nova_lista.sort()
     print(nova_lista)
 
 
