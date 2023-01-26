@@ -48,7 +48,8 @@ with open('lutadores.csv') as arquivo:
     for linha in leitor_csv:
         # Cada linha é uma lista
         print(
-            f'{linha[0]} nasceu no(a)(s) {linha[1]} e mede {linha[2]} centímetros')
+            f'{linha[0]} nasceu no(a)(s) {linha[1]} e mede {linha[2]}
+            centímetros')
 
 # DictReader
 
@@ -59,7 +60,8 @@ with open('lutadores.csv') as arquivo:
     for linha in leitor_csv:
         # cada linha é um OrderedDict
         print(
-            f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede {linha['Altura (em cm)']}")
+            f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede
+            {linha['Altura (em cm)']}")
 
 
 """
