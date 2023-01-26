@@ -75,4 +75,5 @@ with open('lutadores.csv') as arquivo:
     for linha in leitor_csv:
         # cada linha é um OrderedDict
         print(
-            f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede {linha['Altura (em cm)']}")
+            f"{linha['Nome']} nasceu no(a)(s) {linha['País']} e mede", end=" ")
+        print(linha['Altura (em cm)'])
