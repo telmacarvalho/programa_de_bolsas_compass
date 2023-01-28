@@ -1,4 +1,4 @@
-# Exercícios Parte 1
+# Exercício 3 Parte 1
 
 # Escreva um código Python que imprime os números pares de 0 até 20
 # (incluso).

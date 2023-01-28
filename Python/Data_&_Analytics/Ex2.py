@@ -1,4 +1,4 @@
-# Exercícios 2 Parte 1
+# Exercício 2 Parte 1
 
 # Escreva um código Python que verifica se os números 0, 7851
 # e 9 elevado na potência 3  são pares ou ímpares.
