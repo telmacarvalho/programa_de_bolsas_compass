@@ -76,7 +76,7 @@ Exemplo: 22/10/2022
 [Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex5.py)
 
 
-## Seção  Python I 2/2
+## Seção 4 Python I 2/2
 
 <details>
 <summary>
