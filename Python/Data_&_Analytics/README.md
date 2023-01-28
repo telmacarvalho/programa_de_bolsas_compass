@@ -1,6 +1,6 @@
 # Tarefas da Sprint 3
 
-**Seção 3 Python I 1/2**
+## Seção 3 Python I 1/2
 
 <details>
 <summary>
@@ -76,7 +76,7 @@ Exemplo: 22/10/2022
 [Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex5.py)
 
 
-**Seção  Python I 2/2**
+## Seção  Python I 2/2
 
 <details>
 <summary>
