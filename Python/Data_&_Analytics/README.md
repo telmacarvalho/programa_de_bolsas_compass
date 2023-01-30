@@ -335,3 +335,50 @@ Use as variáveis abaixo para representar cada operação matemática
 </details>
 
 [Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex19.py)
+
+<details>
+<summary>
+<b>Exercício 20</b>
+</summary>
+
+Imprima a lista abaixo de trás para frente.
+
+a = [1, 0, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+
+</details>
+
+[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex20.py)
+
+## Seção 6 Python II 1/2
+
+<details>
+<summary>
+<b>Exercício 21</b>
+</summary>
+
+Implemente duas classes Pato e Pardal que herdem de uma classe Passaro a
+habilidade de voar e emitir som, porém, tanto Pato quanto Pardal devem
+emitir sons diferentes (de maneira escrita) no console.
+
+
+Imprima no console exatamente assim:
+
+Pato
+
+Voando...
+
+Pato emitindo som...
+
+Quack Quack
+
+Pardal
+
+Voando...
+
+Pardal emitindo som...
+
+Piu Piu
+
+</details>
+
+[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex20.py)
