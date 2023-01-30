@@ -381,4 +381,121 @@ Piu Piu
 
 </details>
 
-[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex20.py)
+[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex21.py)
+
+
+<details>
+<summary>
+<b>Exercício 22</b>
+</summary>
+
+Crie uma classe Pessoa que tenha um atributo privado nome e um atributo
+público id.  Na sequência, adicione uma função que atribua um valor a nome
+e uma função que retorne o valor de nome.
+
+Importante: Para atributos privados utilizamos “__” Ex: __atributo
+
+
+Para testar seu código use:
+
+
+pessoa = Pessoa(0)
+pessoa.nome = 'Fulano De Tal'
+print(pessoa.nome)
+</details>
+
+[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex22.py)
+
+
+<details>
+<summary>
+<b>Exercício 23</b>
+</summary>
+
+Crie uma classe  Calculo  que contenha um método que aceita dois parâmetros,
+X e Y, e retorne a soma dos dois. Nessa mesma classe, implemente um método
+de subtração, que aceita dois parâmetros, X e Y, e retorne a subtração dos
+dois (resultados negativos são permitidos).
+
+
+Utilize os Calculo abaixo para testar seu exercício:
+
+x = 4
+
+y = 5
+
+imprima:
+
+Somando: 4+5 = 9
+
+Subtraindo: 4-5 = -1
+</details>
+
+[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex23.py)
+
+
+<details>
+<summary>
+<b>Exercício 24</b>
+</summary>
+
+Crie uma classe Ordenadora que contenha um atributo listaBaguncada e que
+contenha os métodos ordenacaoCrescente e ordenacaoDecrescente.
+
+Instancie um objeto chamado crescente dessa classe Ordenadora que tenha como
+listaBaguncada a lista [3,4,2,1,5] e instancie um outro objeto, decrescente
+dessa mesma classe com uma outra listaBaguncada sendo [9,7,6,8].
+
+Para o primeiro objeto citado, use o método ordenacaoCrescente e para o
+segundo objeto, use o método
+
+ordenacaoDecrescente.
+
+
+Imprima o resultado da ordenação crescente e da ordenação decresce
+
+[1, 2, 3, 4, 5]
+
+[9, 8, 7, 6]
+
+</details>
+
+[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex24.py)
+
+
+<details>
+<summary>
+<b>Exercício 25</b>
+</summary>
+
+Crie uma classe Avião que possua os atributos modelo, velocidade_maxima, cor
+e capacidade.
+
+Defina o atributo cor de sua classe , de maneira que todas as instâncias de
+sua classe avião sejam da cor “azul”.
+
+Após isso, a partir de entradas abaixo, instancie e armazene em uma lista 3
+objetos da classe Avião.
+
+Ao final, itere pela lista imprimindo cada um dos objetos no seguinte
+formato:
+
+“O avião de modelo “x” possui uma velocidade máxima de “y”, capacidade para
+“z” passageiros e é da cor “w”.
+
+Sendo x, y, z e w cada um dos atributos da classe “Avião”.
+
+Valores de entrada:
+
+modelo BOIENG456: velocidade máxima 1500 km/h: capacidade para 400
+passageiros: Cor Azul
+
+modelo Embraer Praetor 600: velocidade máxima 863km/h: capacidade para 14
+passageiros: Cor Azul
+
+modelo Antonov An-2: velocidade máxima de 258 Km/h: capacidade para 12
+ passageiros: Cor Azul
+
+</details>
+
+[Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex25.py)
