@@ -1,16 +1,27 @@
 # Extrai e armazena os dados em forma de matriz (sem coletar o cabeçalho),
 # utilizando '\n' e ',' como separador
 
+# Extração
+import re
+
 with open('actors.csv', 'r') as arquivo:
-    conteudo = arquivo.read()
-    conteudo = conteudo.split('\n')
+    conteudo = arquivo.readlines()
     atores = []
-    contador = 0
+    cabecalho = True
     for linha in conteudo:
-        contador += 1
-        if contador != 1 and contador != 6:
-            atores.append(linha.split(','))
-    # print(atores)
+        if cabecalho:
+            # pula primeira linha
+            cabecalho = False
+        else:
+            linha = linha.strip()
+            split_regex = re.findall(r'(\".*?\"|[^\",]+)', linha)
+            atores.append(split_regex)
+
+# Transformação
+for i in atores:
+    print(i)
+
+
 # -----------------------------------------------------------------------------
 # 1- O ator/atriz com maior número de filmes e o respectivo número de filmes.
 
@@ -113,5 +124,3 @@ with open('tarefa1_5.txt', 'w') as arquivo:
     arquivo.write('Atores (mais bem pago para o menos bem pago)\n')
     for item in ator_pagamento:
         arquivo.write(item + '\n')
-
-print(filmes)
