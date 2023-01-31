@@ -65,16 +65,13 @@ with open('tarefa1_3.txt', 'w') as arquivo:
 # -----------------------------------------------------------------------------
 # 4- O nome do(s) filme(s) mais frequente(s) e sua respectiva frequência.
 
-frequencia_filme = []
+frequencia_filme = {}
+
 for linha in atores:
     if linha[4] not in frequencia_filme:
-        frequencia_filme.append([linha[4], 1])
+        frequencia_filme[linha[4]] = 1
     else:
-        print('TESTE')
-        for i in frequencia_filme:
-            if i[0] == i[4]:
-                contador = i[1]+1
-                frequencia_filme.append((i[0], contador))
-                print(i[0])
+        frequencia_filme[linha[4]] = frequencia_filme[linha[4]] + 1
+
 
 print(frequencia_filme)
