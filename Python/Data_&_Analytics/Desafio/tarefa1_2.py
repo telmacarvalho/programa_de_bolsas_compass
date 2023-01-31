@@ -20,7 +20,6 @@ for item in actors:
 
 # Divide o resultado anterior pela quantidade de atores
 media_movies = movies/len(actors)
-print(media_movies)
 
 # Armazena as informações acima em uma variável
 data = f'A média do número de filmes por autor é {media_movies}.'
