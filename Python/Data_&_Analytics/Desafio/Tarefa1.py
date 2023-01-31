@@ -97,7 +97,7 @@ with open('tarefa1_4.txt', 'w') as arquivo:
     arquivo.write(dado)
 
 # -----------------------------------------------------------------------------
-# A lista dos Autores ordenada por pagamento. Do mais bem pago para o menos
+# 5- A lista dos Autores ordenada por pagamento. Do mais bem pago para o menos
 # bem pago
 
 # Ordena a matriz pela ordem descrescente da coluna "Gross" e armazena em uma
@@ -108,4 +108,10 @@ for ator in filmes:
     nome = ator[0]
     ator_pagamento.append(nome)
 
-print(ator_pagamento)
+# Armazena o resultado acima em um arquivo txt
+with open('tarefa1_5.txt', 'w') as arquivo:
+    arquivo.write('Atores (mais bem pago para o menos bem pago)\n')
+    for item in ator_pagamento:
+        arquivo.write(item + '\n')
+
+print(filmes)
