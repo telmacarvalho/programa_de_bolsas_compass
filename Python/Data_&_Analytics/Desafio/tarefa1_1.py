@@ -14,7 +14,8 @@ for item in conteudo:
 # 1- O ator/atriz com maior número de sorted_actors e o respectivo número de
 # filmes.
 
-# Ordena a lista de atores pela ordem descrescente da coluna "Number of Movies"
+# Ordena a lista de atores pela ordem descrescente do atributo "Number of
+# Movies"
 sorted_actors = sorted(actors, key=lambda a: a.number_of_movies, reverse=True)
 
 # Armazena em variáveis o nome e a quantidade de filmes do primeiro item da
