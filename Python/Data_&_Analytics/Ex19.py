@@ -36,5 +36,5 @@ valor_minimo = random_list[0]
 valor_maximo = random_list[-1]
 
 print(
-    f'Media: {media}, Mediada: {mediana}, Mínimo: {valor_minimo},' +
-    f' Máximo {valor_maximo}')
+    f'Media: {media}, Mediana: {mediana}, Mínimo: {valor_minimo},' +
+    f' Máximo: {valor_maximo}')
