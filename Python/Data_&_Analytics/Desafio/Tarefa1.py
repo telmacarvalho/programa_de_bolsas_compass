@@ -76,10 +76,11 @@ with open('tarefa1_3.txt', 'w') as arquivo:
 # existente
 frequencia_filme = {}
 for linha in atores:
-    if linha[4] not in frequencia_filme:
-        frequencia_filme[linha[4]] = 1
+    nome_filme = linha[4]
+    if nome_filme not in frequencia_filme:
+        frequencia_filme[nome_filme] = 1
     else:
-        frequencia_filme[linha[4]] = frequencia_filme[linha[4]] + 1
+        frequencia_filme[nome_filme] = frequencia_filme[nome_filme] + 1
 
 # Ordena o dicionário pelo valor e armazena em variáveis o nome do filme e
 # sua respectiva frenquência, convertendo este último de inteiro para string.
@@ -98,3 +99,13 @@ with open('tarefa1_4.txt', 'w') as arquivo:
 # -----------------------------------------------------------------------------
 # A lista dos Autores ordenada por pagamento. Do mais bem pago para o menos
 # bem pago
+
+# Ordena a matriz pela ordem descrescente da coluna "Gross" e armazena em uma
+# variável uma lista contendo apenas o nome dos atores
+filmes = sorted(atores, key=lambda filmes: filmes[5], reverse=True)
+ator_pagamento = []
+for ator in filmes:
+    nome = ator[0]
+    ator_pagamento.append(nome)
+
+print(ator_pagamento)
