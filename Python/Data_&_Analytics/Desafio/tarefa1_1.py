@@ -11,15 +11,15 @@ for item in conteudo:
     data = Actor(item[0], item[1], item[2], item[3], item[4], item[5])
     actors.append(data)
 
-# 1- O ator/atriz com maior número de sorted_actors e o respectivo número de
+# 1- O ator/atriz com maior número de filmes e o respectivo número de
 # filmes.
 
 # Ordena a lista de atores pela ordem descrescente do atributo "Number of
 # Movies"
 sorted_actors = sorted(actors, key=lambda a: a.number_of_movies, reverse=True)
 
-# Armazena em variáveis o nome e a quantidade de filmes do primeiro item da
-# lista anterior
+# Armazena em variáveis o nome do ator e a quantidade de filmes do primeiro
+# item da lista anterior
 name = sorted_actors[0].name
 quantity = sorted_actors[0].number_of_movies
 
