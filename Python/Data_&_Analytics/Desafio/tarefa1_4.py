@@ -13,24 +13,30 @@ for item in conteudo:
 
 # 4- O nome do(s) filme(s) mais frequente(s) e sua respectiva frequência.
 
-# Percorre a matriz verificadno se os valores da coluna "#1 Movie" já existem
-# no dicionário criado previamente, caso não exista, acrescenta o nome do filme
-# como chave e o valor 1, caso já exista, atualiza o valor da chave já
+# Percorre a lista verificadno se os valores do atributo "Movie" já existem
+# no dicionário criado previamente. Caso não exista, acrescenta o nome do filme
+# como chave e o valor 1 e, caso já exista, atualiza o valor da chave já
 # existente
-frequencia_filme = {}
+frequency_movies = {}
 for linha in actors:
-    nome_filme = linha.movie
-    if nome_filme not in frequencia_filme:
-        frequencia_filme[nome_filme] = 1
+    if linha.movie not in frequency_movies:
+        frequency_movies[linha.movie] = 1
     else:
-        frequencia_filme[nome_filme] = frequencia_filme[nome_filme] + 1
+        frequency_movies[linha.movie] = frequency_movies[linha.movie] + 1
 
-# Ordena o dicionário pelo valor e armazena em variáveis o nome do filme e
-# sua respectiva frenquência, convertendo este último de inteiro para string.
-# Em seguida, armazena as informações em forma de texto com concatenação
-frequencia = sorted(frequencia_filme.items(),
-                    reverse=True, key=lambda filme: filme[1])
-filme = frequencia[0][0]
-quantidade = str(frequencia[0][1])
-dado = filme + ' é o nome do(s) filme(s) mais frequente(s) com uma frequência'\
-    + ' total de ' + quantidade + ' repetições.'
+# Ordena o dicionário pela ordem descrescente do valor da chave
+frequency = sorted(frequency_movies.items(),
+                   reverse=True, key=lambda a: a[1])
+
+# Armazena em variáveis o nome do filme e frenquência do primeiro item da
+# lista anterior
+movie = frequency[0][0]
+quantity = frequency[0][1]
+
+# Armazena as informações acima em uma variável
+data = f'{movie} é o nome do(s) filme(s) mais frequente(s) e sua respectiva'\
+    f' frequência é {quantity}.'
+
+# Armazena o resultado acima em um arquivo txt
+with open('tarefa1_4.txt', 'w') as arquivo:
+    arquivo.write(data)
