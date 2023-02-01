@@ -22,5 +22,5 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 ## SPRINT 3 
 
-- [x] Programação em Python do básico ao avançado *(in progress)*
+- [x] Programação em Python do básico ao avançadoSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 - [x] Data & Analytics - PB - AWS 3/10
