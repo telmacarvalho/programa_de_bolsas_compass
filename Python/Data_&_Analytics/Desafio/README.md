@@ -12,7 +12,7 @@ Primeiramente, foram desenvolvidas duas classes a fim de extrair, tratar e agrup
 
     [actor](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Desafio/actor.py)
 
-## Scritps e resultados salvos em txt:
+## Scripts e resultados salvos em txt:
 
 * **Exercício 1**
 
