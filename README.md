@@ -23,3 +23,8 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 - [x] Programação em Python do básico ao avançado
 - [x] Data & Analytics - PB - AWS 3/10
+
+## SPRINT 4
+- [ ] Docker para Desenvolvedores (com Docker Swarm e Kubernetes) (*in progress*)
+- [ ] Estatística Descritiva com Python
+- [ ] Data & Analytics - PB - AWS 4/10
