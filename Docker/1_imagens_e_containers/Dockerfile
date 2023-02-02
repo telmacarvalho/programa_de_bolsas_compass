@@ -1,6 +1,6 @@
-FROM node:14
+FROM node
 
-WORKDIR /scr
+WORKDIR /app
 
 COPY package*.json ./
 
