@@ -1,4 +1,4 @@
-# Desafio da seção 7
+# Seção 7 Desafio de ETL Python
 
 Primeiramente, foram desenvolvidas duas classes a fim de extrair, tratar e agrupar os dados, que, em seguida, foram implementadas no desenvolvimento dos scripts de cada tarefa.
 
