@@ -7,7 +7,6 @@
 --Ordene os resultados pelo estado (1º) e nome do produto (2º).
 --Observação: Apenas vendas com status concluído.
 
--- FALTA TERMINAR
 select 
 	estado,
 	nmpro,
