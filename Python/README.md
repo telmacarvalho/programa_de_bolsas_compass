@@ -1,10 +1,17 @@
 # Desenvolvimento das atividades da Sprint 3
 
-* Data & Analytics
+* [Data & Analytics AWS 3/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Python/Data_%26_Analytics)
 
-Contém as tarefas de Data & Analytics - PB - AWS 3/10 da Udemy: exercícios das seções 3 a 6 e a tarefa de desafio da seção 7\
+Contém as tarefas de Data & Analytics - PB - AWS 3/10 da Udemy: exercícios das seções 3 a 6 e a tarefa de Desafio de ETL Python da seção 7\
 *Alguns scripts foram adaptados para serem aceitos na plataforma da Udemy*
 
-* Exemplos
+* [Exemplos](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Python/Exemplos)
 
 Contém exemplos realizados no decorrer do curso de Programação em Python do básico ao avançado - seções 16 a 20 - via Udemy.
+
+# Desenvolvimento das atividades da Sprint 4
+
+* [Data & Analytics AWS 4/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Ex_sprint_4.ipynb) (*in progress*)
+
+Contém as tarefas de Data & Analytics - PB - AWS 4/10 da Udemy: exercícios das seções 2 e a tarefa de  Container com Docker da seção 3
+
