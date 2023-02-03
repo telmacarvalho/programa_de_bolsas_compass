@@ -500,4 +500,4 @@ modelo Antonov An-2: velocidade máxima de 258 Km/h: capacidade para 12
 
 [Tarefa](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_%26_Analytics/Ex25.py)
 
-## [Desafio da seção 7](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_&_Analytics/Desafio/README.md)
+## [Seção 7 Desafio de ETL Python](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Data_&_Analytics/Desafio/README.md)
