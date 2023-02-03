@@ -14,8 +14,7 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 ## SRINT 2
 
 - [x] Data & Analytics - PB - AWS 2/10 - Conceitos I
-- [x] SQL para Análise de Dados: Do básico ao avançado\
-[Repositório](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/SQL/Exemplos)
+- [x] [SQL para Análise de Dados: Do básico ao avançado](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/SQL/Exemplos)
 - [x] [Data & Analytics - PB - AWS 2/10 - Exercícios I e Conceitos II](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/SQL/Data_%26_Analytics) 
 - [x] Big Data Fundamentos 
 - [x] [Data & Analytics - PB - AWS 2/10 - Exercícios II](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/SQL/Data_%26_Analytics)
