@@ -25,6 +25,9 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] Data & Analytics - PB - AWS 3/10
 
 ## SPRINT 4
+
+- [x] Programação funcional: O que é? | Alura
+- [ ] python-funcional/00_introducao.md at master · dunossauro/python-funcional (*in progress*)
 - [ ] Docker para Desenvolvedores (com Docker Swarm e Kubernetes) (*in progress*)
-- [ ] Estatística Descritiva com Python
+- [ ] Estatística Descritiva com Python (*in progress*)
 - [ ] Data & Analytics - PB - AWS 4/10
