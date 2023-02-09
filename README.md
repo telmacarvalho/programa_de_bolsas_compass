@@ -1,3 +1,33 @@
+# About me
+
+Me chamo Telma e sou de Barra Mansa - RJ\
+Hobbies: teatro :performing_arts:, filmes :clapper:, séries :tv:, livros :books:, games :video_game:, patinação :roller_skate: e makeup  :lipstick:\
+Moro com meu companheiro :hearts:, tenho uma viralatinha chamada Cacau :feet: e amo viajar :earth_americas:\
+**Tenho interesse em docência, pesquisa, programação e machine learning.**\
+Do science like a girl! :rocket:
+
+## Formação Acadêmica
+
+- Cursando Ciência de Dados na UNIVESP (*2º semestre*)
+- Mestrado em Física na área de Óptica e Informação Quântica pela UFF\
+  Pesquisa de Dissertação:\
+  [Classificação da não-separabilidade de modos
+spin-órbita com aprendizado de máquina](https://portal.if.uff.br/posgrad/wp-content/uploads/sites/3/2022/06/Telma-Fatima-Clarita-de-Carvalho_dissertacao.pdf)
+- Licenciatura em Física pelo IFRJ\
+  Coautoria no capítulo do livro:\
+  [Docência e pesquisa em Física e Astronomia](https://drive.google.com/file/d/1ZZbMvo-F6NzBfkBpLWSlOK_pHJh0lReC/view)
+- Bacharelado em Ciências Contábeis pelo UBM
+
+## Carreira
+
+Atualmente:
+- Estagiária em engenharia de dados na Compass UOL
+- Tutora de física na Fundação CECIERJ (*bolsista*)
+- Professora no Protetores do Saber (*freelancer*) 
+- Atriz na cia Arte in Foco (*voluntária*)
+
+Mais informações sobre minha experiência acadêmica, profissional e voluntária, bem como, cursos complementares e apresentações de poster e oficinas em Simpósios, se encontram no meu [perfil](https://www.linkedin.com/in/telma-carvalho-8b659699) do LinkedIn.
+
 # Programa de Bolsas da Compass UOL
 
 O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprendizagem de  diferentes **tecnologias** e **metodologias** aplicadas em **projetos de dados** utilizando os **serviços de nuvem da AWS** como plataforma. 
