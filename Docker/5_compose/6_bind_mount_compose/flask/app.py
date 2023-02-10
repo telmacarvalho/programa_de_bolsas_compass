@@ -14,22 +14,25 @@ app.config['MYSQL_DB'] = 'flaskdocker'
 
 mysql = MySQL(app)
 
+
 @app.route("/", methods=["GET"])
 def index():
-  data = requests.get('https://randomuser.me/api')
-  return data.json()
+    data = requests.get('https://randomuser.me/api')
+    return data.json()
+
 
 @app.route("/inserthost", methods=['POST'])
 def inserthost():
-  data = requests.get('https://randomuser.me/api').json()
-  username = data['results'][0]['name']['first']
+    data = requests.get('https://randomuser.me/api').json()
+    username = data['results'][0]['name']['first']
 
-  cur = mysql.connection.cursor()
-  cur.execute("""INSERT INTO users(name) VALUES(%s)""", (username,))
-  mysql.connection.commit()
-  cur.close()
+    cur = mysql.connection.cursor()
+    cur.execute("""INSERT INTO users(name) VALUES(%s)""", (username,))
+    mysql.connection.commit()
+    cur.close()
 
-  return "Olá " + username
+    return "Olá " + username
+
 
 if __name__ == "__main__":
-  app.run(host="0.0.0.0", debug=True, port="5000")
+    app.run(host="0.0.0.0", debug=True, port="5000")
