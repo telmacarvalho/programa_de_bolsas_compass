@@ -4,4 +4,4 @@ WORKDIR /ex1
 
 COPY carguru.py .
 
-CMD ["python", "./app.py"]
+CMD ["python", "./carguru.py"]
