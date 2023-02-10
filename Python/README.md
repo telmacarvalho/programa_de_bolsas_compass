@@ -15,7 +15,7 @@ Contém exemplos realizados no decorrer do curso de Programação em Python do b
 
 Contém exercícios de Python das seções 2 de Data & Analytics - PB - AWS 4/10 da Udemy.
 
-* [Tarefa_Containers](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers) (*in progress*)
+* [Tarefa_Containers](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers)
 
 Contém a tarefa com exercícios de Containers da seção 3 de Data & Analytics - PB - AWS 4/10 da Udemy.
 
