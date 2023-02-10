@@ -10,10 +10,10 @@ services:
       - "3306:3306"
     networks:
       - dockercompose
-    volumes:
-      - ./mysql/schema.sql:/docker-entrypoint-initdb.d/init.sql
-  
-  flask:
+    # volumes:
+    #   - ./mysql/schema.sql:/docker-entrypoint-initdb.d/init.sql
+  # flask:
+  backend:
     depends_on: 
       - db
     image: flaskcompose
