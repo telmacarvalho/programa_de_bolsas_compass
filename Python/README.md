@@ -11,7 +11,7 @@ Contém exemplos realizados no decorrer do curso de Programação em Python do b
 
 # Desenvolvimento das atividades da Sprint 4
 
-* [Data & Analytics AWS 4/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Ex_sprint_4.ipynb) (*in progress*)
+* [Ex_sprint_4.ipynb](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Ex_sprint_4.ipynb)
 
-Contém as tarefas de Data & Analytics - PB - AWS 4/10 da Udemy: exercícios das seções 2 e a tarefa de  Container com Docker da seção 3
+Contém exercícios das seções 2 de Data & Analytics - PB - AWS 4/10 da Udemy.
 
