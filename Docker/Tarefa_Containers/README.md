@@ -1,5 +1,5 @@
 # Desenvolvimento das atividades da Sprint 4
-Contém a tarefa com exercícios de Containers da seção 3 de Data & Analytics - PB - AWS 4/10 da Udemy:
+Contém os exercícios de Containers da seção 3 de Data & Analytics - PB - AWS 4/10 da Udemy:
 
 
 <details>
