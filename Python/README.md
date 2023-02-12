@@ -11,11 +11,11 @@ Contém exemplos realizados no decorrer do curso de Programação em Python do b
 
 # Desenvolvimento das atividades da Sprint 4
 
-* [Ex_sprint_4.ipynb](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Ex_sprint_4.ipynb)
+* [Jupyter_notebook](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Python/Ex_sprint_4.ipynb)
 
 Contém exercícios de Python das seções 2 de Data & Analytics - PB - AWS 4/10 da Udemy.
 
-* [Tarefa_Containers](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers)
+* [Tarefa_containers](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers)
 
 Contém a tarefa com exercícios de Containers da seção 3 de Data & Analytics - PB - AWS 4/10 da Udemy.
 

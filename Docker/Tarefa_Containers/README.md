@@ -11,8 +11,7 @@ Construa uma imagem a partir de um arquivo de instruções (Dockerfile) que exec
 
 </details>
 
-[Repositório](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers/Ex_1)\
-[Dockerfile](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Docker/Tarefa_Containers/Ex_1/Dockerfile)
+[Repositório](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers/Ex_1)
 
 <details>
 <summary>
