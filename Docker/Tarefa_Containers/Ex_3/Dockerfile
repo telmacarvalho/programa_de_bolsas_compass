@@ -2,6 +2,6 @@ FROM python:3
 
 WORKDIR /ex3
 
-COPY hashstring.py .
+COPY maskdata.py .
 
-CMD ["python", "./hashstring.py"]
+CMD ["python", "./maskdata.py"]
