@@ -2,6 +2,6 @@ FROM python:3
 
 WORKDIR /ex3
 
-COPY receivestring.py .
+COPY hashstring.py .
 
-CMD ["python", "./receivestring.py"]
+CMD ["python", "./hashstring.py"]
