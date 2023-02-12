@@ -20,6 +20,25 @@ Construa uma imagem a partir de um arquivo de instruções (Dockerfile) que exec
 
 [Repositório](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers/Ex_1)
 
+<details>
+<summary>
+<b>Exercício 2</b>
+</summary>
+
+É possível reutilizar containers? Em caso positivo, apresente o comando necessário para reiniciar um dos conteiners em seu ambiente Docker. Não sendo possível reutilizar, justifique sua resposta.
+
+</details>
+
+
+<details>
+<summary>
+</>Resposta</>
+</summary>
+
+É possível reutilizar containers através do comando:\
+ ```docker start -i <ex_1>```
+
+</details><br /> 
 
 <details>
 <summary>
