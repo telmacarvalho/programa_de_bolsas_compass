@@ -26,7 +26,7 @@ Atualmente:
 - Professora no Protetores do Saber (*freelancer*) 
 - Atriz na cia Arte in Foco (*voluntária*)
 
-Mais informações sobre minha experiência acadêmica, profissional e voluntária, bem como, cursos complementares e apresentações de poster e oficinas em Simpósios, se encontram no meu [perfil](https://www.linkedin.com/in/telma-carvalho-8b659699) do LinkedIn.
+Mais informações sobre minha experiência acadêmica, profissional e voluntária, bem como, cursos complementares e apresentações de poster e oficinas em Simpósios, se encontram no meu [Linkedin](https://www.linkedin.com/in/telma-carvalho-8b659699) e no meu [Lattes](https://wwws.cnpq.br/cvlattesweb/PKG_MENU.menu?f_cod=6A6DD4159A5A1BEA0BCE9B01BDCC99DF#).
 
 # Programa de Bolsas da Compass UOL
 
