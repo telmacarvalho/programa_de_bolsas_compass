@@ -58,6 +58,6 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 - [x] Programação funcional: O que é? | Alura
 - [x] python-funcional/00_introducao.md at master · dunossauro/python-funcional
-- [ ] [Docker para Desenvolvedores (com Docker Swarm e Kubernetes)](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker) (*in progress*)
-- [ ] Estatística Descritiva com Python (*in progress*)
-- [ ] [Data & Analytics - PB - AWS 4/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Python)
+- [x] [Docker para Desenvolvedores (com Docker Swarm e Kubernetes)](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker)
+- [x] Estatística Descritiva com Python
+- [x] [Data & Analytics - PB - AWS 4/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Python)
