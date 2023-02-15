@@ -19,3 +19,6 @@ Contém exercícios de Python das seções 2 de Data & Analytics - PB - AWS 4/10
 
 Contém a tarefa com exercícios de Containers da seção 3 de Data & Analytics - PB - AWS 4/10 da Udemy.
 
+* [Exemplos/Estatística](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Python/Exemplos/Estatistica)
+
+ Contém exemplos realizados no decorrer do curso de Estatística Descritiva com Python - seções 1, 3 a 8 - via Udemy.
