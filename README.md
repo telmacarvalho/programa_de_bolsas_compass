@@ -1,8 +1,8 @@
 # About me
 
 Me chamo Telma e sou de Barra Mansa - RJ\
-Hobbies: teatro :performing_arts:, filmes :clapper:, séries :tv:, livros :books:, games :video_game:, patinação :roller_skate: e makeup  :lipstick:\
 Moro com meu companheiro :hearts:, tenho uma viralatinha chamada Cacau :feet: e amo viajar :earth_americas:\
+Hobbies: teatro :performing_arts:, filmes :clapper:, séries :tv:, livros :books:, games :video_game:, patinação :roller_skate: e makeup  :lipstick:\
 **Tenho interesse em docência, pesquisa, programação e machine learning.**\
 Do science like a girl! :rocket:
 
