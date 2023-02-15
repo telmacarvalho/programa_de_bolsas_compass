@@ -2,7 +2,7 @@
 
 * [Exemplos](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Exemplos)
 
-Contém exemplos realizados no decorrer do curso de Docker para Desenvolvedores (com Docker Swarm e Kubernetes) via Udemy.
+Contém exemplos realizados no decorrer do curso de Docker para Desenvolvedores (com Docker Swarm e Kubernetes) - seções 1 a 9, 11 - via Udemy.
 
 * [Tarefa_containers](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Docker/Tarefa_Containers)
 
