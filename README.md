@@ -62,7 +62,7 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] [Estatística Descritiva com Python](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Python/Exemplos/Estatistica)
 - [x] [Data & Analytics - PB - AWS 4/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Python)
 
-## SPRINT 5
+## [SPRINT 5](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%205)
 
 - [x] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
 - [x] AWS Skill Builder - AWS Partner: Accreditation (Technical)
