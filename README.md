@@ -64,10 +64,10 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 ## SPRINT 5
 
-- [ ] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner (*in progress*)
+- [x] AWS Skill Builder - AWS Cloud Quest: Cloud Practitioner
 - [x] AWS Skill Builder - AWS Partner: Accreditation (Technical)
-- [ ] AWS Skill Builder - AWS Partner: Sales Accreditation (Business) (*in progress*)
-- [ ] AWS Skill Builder - AWS Partner: Cloud Economics Accreditation
+- [x] AWS Skill Builder - AWS Partner: Sales Accreditation (Business) 
+- [ ] AWS Skill Builder - AWS Partner: Cloud Economics Accreditation (*in progress*)
 - [ ] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner
 - [ ] Data & Analytics - PB - AWS 5/10 (*in progress*)
 
