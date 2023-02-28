@@ -68,6 +68,6 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] AWS Skill Builder - AWS Partner: Accreditation (Technical)
 - [x] AWS Skill Builder - AWS Partner: Sales Accreditation (Business) 
 - [ ] AWS Skill Builder - AWS Partner: Cloud Economics Accreditation (*in progress*)
-- [ ] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner
+- [ ] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner (*in progress*)
 - [ ] Data & Analytics - PB - AWS 5/10 (*in progress*)
 
