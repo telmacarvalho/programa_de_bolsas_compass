@@ -71,3 +71,21 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner 
 - [x] Data & Analytics - PB - AWS 5/10
 
+## SPRINT 6
+
+- [ ] AWS Skill Builder - Data Analytics Fundamentals (Portuguese) (*in progress*)
+- [ ] AWS Partner: Data Analytics on AWS (Business) (Portuguese)
+- [ ] AWS Skill Builder - AWS Partner: Data Analytics on AWS (Business) (Portuguese)
+- [ ] AWS Skill Builder - Introduction to Amazon Kinesis Streams
+- [ ] AWS Skill Builder - Introduction to Amazon Kinesis Analytics
+- [ ] AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR) (Portuguese)
+- [ ] AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
+- [ ] AWS Skill Builder - Introduction to Amazon Quicksight (Portuguese)
+- [ ] AWS Skill Builder - Introduction to AWS IoT Analytics
+- [ ] AWS Skill Builder - Getting Started with Amazon Redshift
+- [ ] AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data (Portuguese)
+- [ ] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
+- [ ] AWS Skill Builder - Serverless Analytics (Portuguese)
+- [ ] AWS Skill Builder - Why Analytics for Games (Portuguese)
+
+
