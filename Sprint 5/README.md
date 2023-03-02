@@ -8,5 +8,6 @@ Contém os certificados dos cursos realizados no decorrer da  referida sprint:
 ![Badge](Badge-accreditation.png)
 - [AWS Skill Builder - AWS Partner: Sales Accreditation (Business)](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%205/Certificdo%20AWS%20Partner:%20Sales%20Accreditation.pdf)\
 ![Badge](sales-accreditation.png)
-- [AWS Skill Builder - AWS Partner: Cloud Economics Accreditation](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%205/Certificado%20AWS%20Partner:%20Cloud%20Economics%20Accreditation.pdf)
+- [AWS Skill Builder - AWS Partner: Cloud Economics Accreditation](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%205/Certificado%20AWS%20Partner:%20Cloud%20Economics%20Accreditation.pdf)\
+![Badge](cloud-economics.png)
 - [AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%205/Certificado%20Exam%20Prep:%20AWS%20Certified%20Cloud%20Practitioner.pdf)
