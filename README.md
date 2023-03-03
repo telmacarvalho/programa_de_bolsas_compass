@@ -71,9 +71,9 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] AWS Skill Builder - Exam Prep: AWS Certified Cloud Practitioner 
 - [x] Data & Analytics - PB - AWS 5/10
 
-## SPRINT 6
+## [SPRINT 6](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%206)
 
-- [x] [AWS Skill Builder - Data Analytics Fundamentals (Portuguese)](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%206)
+- [x] AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
 - [ ] AWS Partner: Data Analytics on AWS (Business) (Portuguese) (*in progress*)
 - [ ] AWS Skill Builder - Introduction to Amazon Kinesis Streams
 - [ ] AWS Skill Builder - Introduction to Amazon Kinesis Analytics
