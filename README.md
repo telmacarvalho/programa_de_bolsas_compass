@@ -78,9 +78,9 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] AWS Skill Builder - Introduction to Amazon Kinesis Streams
 - [x] AWS Skill Builder - Introduction to Amazon Kinesis Analytics 
 - [x] AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR) (Portuguese)
-- [ ] AWS Skill Builder - Introduction to Amazon Athena (Portuguese)   (*in progress*)
-- [ ] AWS Skill Builder - Introduction to Amazon Quicksight (Portuguese)
-- [ ] AWS Skill Builder - Introduction to AWS IoT Analytics
+- [x] AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
+- [x] AWS Skill Builder - Introduction to Amazon Quicksight (Portuguese)
+- [ ] AWS Skill Builder - Introduction to AWS IoT Analytics (*in progress*)
 - [ ] AWS Skill Builder - Getting Started with Amazon Redshift
 - [ ] AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data (Portuguese)
 - [ ] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
