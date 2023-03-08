@@ -75,8 +75,8 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 - [x] AWS Skill Builder - Data Analytics Fundamentals (Portuguese)
 - [x] AWS Partner: Data Analytics on AWS (Business) (Portuguese)
-- [ ] AWS Skill Builder - Introduction to Amazon Kinesis Streams (*in progress*)
-- [ ] AWS Skill Builder - Introduction to Amazon Kinesis Analytics
+- [x] AWS Skill Builder - Introduction to Amazon Kinesis Streams
+- [ ] AWS Skill Builder - Introduction to Amazon Kinesis Analytics (*in progress*)
 - [ ] AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR) (Portuguese)
 - [ ] AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
 - [ ] AWS Skill Builder - Introduction to Amazon Quicksight (Portuguese)
