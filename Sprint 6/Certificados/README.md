@@ -13,5 +13,5 @@ Contém os certificados dos cursos realizados no decorrer da referida sprint:
 - AWS Skill Builder - Getting Started with Amazon Redshift
 - AWS Skill Builder - Deep Dive into Concepts and Tools for Analyzing Streaming Data (Portuguese)
 - AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
-- AWS Skill Builder - Serverless Analytics (Portuguese) -->
-- AWS Skill Builder - Why Analytics for Games (Portuguese)
+- AWS Skill Builder - Serverless Analytics (Portuguese)
+- AWS Skill Builder - Why Analytics for Games (Portuguese) -->
