@@ -4,8 +4,8 @@ Contém os certificados dos cursos realizados no decorrer da referida sprint:
 
 - [AWS Skill Builder - Data Analytics Fundamentals (Portuguese)](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Certificados/Certificado%20Data%20Analytics%20Fundamentals.pdf)
 - [AWS Partner: Data Analytics on AWS (Business) (Portuguese)](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Certificados/Certificado%20Data%20Analytics%20on%20AWS%20(Business).pdf)
-<!-- - AWS Skill Builder - Introduction to Amazon Kinesis Streams
-- AWS Skill Builder - Introduction to Amazon Kinesis Analytics
+- [AWS Skill Builder - Introduction to Amazon Kinesis Streams](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Certificados/Certificado%20Introduction%20to%20Amazon%20Kinesis%20Analytics.pdf)
+<!-- - AWS Skill Builder - Introduction to Amazon Kinesis Analytics
 - AWS Skill Builder - Introduction to Amazon Elastic MapReduce (EMR) (Portuguese)
 - AWS Skill Builder - Introduction to Amazon Athena (Portuguese)
 - AWS Skill Builder - Introduction to Amazon Quicksight (Portuguese)
