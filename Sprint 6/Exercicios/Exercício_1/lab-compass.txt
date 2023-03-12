@@ -1,0 +1,5 @@
+Bucket: labcompassuol
+
+ndpoint de site do bucket copiado:
+http://labcompassuol.s3-website-us-east-1.amazonaws.com
+
