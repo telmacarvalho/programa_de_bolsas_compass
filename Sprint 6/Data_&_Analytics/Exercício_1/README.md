@@ -137,3 +137,42 @@ Uma mensagem é exibida indicando que a política de bucket foi adicionada com s
 
 Se você vir um erro que diz Policy has invalid resource, confirme se o nome do bucket na política de bucket corresponde ao nome do seu bucket. Se você receber uma mensagem de erro e não puder salvar a política do bucket, verifique suas configurações de acesso público para confirmar que você permite acesso público ao bucket.
 
+## Etapa 5: Configurar um documento de índice
+
+Quando você habilita a hospedagem de sites estáticos para seu bucket, deve informar o nome do documento de índice (por exemplo, index.html). Naturalmente, o arquivo informado deverá estar presente no bucket para que a configuração tenha efeito.
+
+Vamos aos passo para configuração do documento de índice:
+
+1. Criar um arquivo local (sua máquina) com o nome index.html . O conteúdo do arquivo deverá ser (atente-se para o atributo href do link, pois ele deverá apontar para o arquivo CSV):
+```
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Home Page do meu WebSite - Tutorial de S3</title>
+</head>
+<body>
+  <h1>Bem-vindo ao meu website</h1>
+  <p>Agora hospedado em Amazon S3!</p>
+  <a href="nome do arquivo CSV a ser baixado">Download CSV File</a> 
+</body>
+</html>
+```
+2. Salvar as alterações.
+
+    O nome do documento de índice deve corresponder exatamente ao nome do documento de índice que você inseriu na caixa de diálogo Hospedagem de site estático. O nome do documento de índice diferencia maiúsculas de minúsculas. Por exemplo, se você informou index.html na configuração do bucket, seu documento de índice também deverá ser index.html (e não Index.html, por exemplo).
+
+
+
+3. Faça login no AWS Management Console e abra o console do Amazon S3 em https://console.aws.amazon.com/s3/.
+
+4. Na lista Buckets, selecione o nome do bucket que você configurou hospedagem de conteúdo estático.
+
+5. Para fazer upload do documento de índice para o bucket, siga um destes procedimentos:
+
+    - Arraste e solte o arquivo de índice na listagem de buckets do console.
+
+    - Escolha Upload (Fazer upload) e siga as instruções para escolher e fazer upload do arquivo de índice.
+
+6. Crie uma pasta chamada dados e, após, faça upload do conteúdo do site (arquivo CSV) para ela.
+
+
+
