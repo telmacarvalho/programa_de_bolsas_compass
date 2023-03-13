@@ -75,13 +75,20 @@ Por padrão, o Amazon S3 bloqueia o acesso público à sua conta e aos seus buck
 
 1. Abra o console do Amazon S3 em https://console.aws.amazon.com/s3/.
 
-2. Escolha o nome do bucket configurado como um site estático.
+2. Escolha o nome do bucket configurado como um site estático.\
+![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_3/1.png)
 
 3. Escolha Permissions (Permissões).
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_3/2.png)
 
-4. Em Block public access (bucket settings) (Bloqueio de acesso público (configurações de bucket), escolha Edit (Editar).
+4. Em Block public access (bucket settings) Bloqueio de acesso público (configurações de bucket), escolha Edit (Editar).\
+![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_3/3.png)
 
-5. Desmarque Block all public access (Bloquear todo acesso público) e escolha Save changes (Salvar alterações).
+5. Desmarque Block all public access (Bloquear todo acesso público) e escolha Save changes (Salvar alterações).\
+![Print 4](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_3/4.png)\
+![Print 5](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_3/5.png)\
+![Print 6](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_3/6.png)
+
 
 O Amazon S3 desativa as configurações do bloqueio de acesso público para seu bucket. Para criar um site público e estático, você também pode ter que editar as configurações de Bloqueio de acesso público para sua conta antes de adicionar uma política de bucket. Se as configurações da conta para bloquear acesso público estiverem ativadas no momento, você verá uma observação em Block public access (bucket settings) (Bloqueio de acesso público (configurações de bucket)).
 
