@@ -51,7 +51,11 @@
 
 ![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/1.png)
 
-## Etapa 2: Criar um banco de dados
+<details>
+<summary>
+<h1>Etapa 2: Criar um banco de dados</h1>
+</summary>
+
 
 1. À direita do painel de navegação, você pode usar o editor de consultas do Athena para inserir e executar as consultas e instruções.
 
@@ -62,11 +66,16 @@ Selecione Run (Executar) ou pressione Ctrl+ENTER.
 
 4. Na lista Database (Banco de dados) à esquerda, escolha meubanco para torná-lo seu banco de dados atual.
 
+</details>
+
 **Print do resultado da etapa 2:**
 
 ![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/2.png)
 
-## Etapa 3: Criar uma tabela
+<details>
+<summary>
+<h1>Etapa 3: Criar uma tabela</h1>
+</summary>
 
 Agora que você tem um banco de dados, pode criar uma tabela do Athena para ele. A tabela criada será baseada nos dados de log de exemplo do Amazon CloudFront, no local s3://athena-examples-myregion/cloudfront/plaintext/, em que myregion é a sua Região da AWS atual. Abaixo um exemplo:
 
@@ -125,6 +134,8 @@ select nome from nomedobanco.nomedatabela where ano = 1999 order by total limit 
 
 5. Crie uma consulta que lista os 3 nomes mais usados em cada década desde o 1950 até hoje.
 
+</details>
+
 **Query desenvolvida:**
 
 ```
@@ -154,7 +165,7 @@ from ranked_cte
 where rn <= 3
 order by decade
 ```
-**Resultado obtido:**
+**Resultado obtido com a query acima:**
 
 [Downloaded results](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/Result_Lab_AWS_Athena.csv)
 
