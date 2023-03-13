@@ -1,8 +1,13 @@
 Bucket: labcompassuol
 
-ndpoint de site do bucket copiado:
+Endpoint de site do bucket copiado:
 http://labcompassuol.s3-website-us-east-1.amazonaws.com
 
-Query result location
-
+Query result location:
 s3://labcompassuol/queries
+
+Nome da função:
+functioncompassuol
+
+Nome do evento:
+name1
