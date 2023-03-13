@@ -1,4 +1,4 @@
-# Desenvolvimento dos exercícios de laboratórios AWS da Sprint 6
+# Desenvolvimento das etapas do exercício Lab AWS S3 da Sprint 6
 
 ## Etapa 1: Criar um bucket
 
