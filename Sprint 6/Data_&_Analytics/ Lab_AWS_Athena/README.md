@@ -40,21 +40,29 @@
 
 10. Escolha Save (Salvar).
 
-11. Selecione Editor para alternar para o editor de consultas.\
+11. Selecione Editor para alternar para o editor de consultas.
+
+**Resultado da etapa 1**
+
 ![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/1.png)
 
 ## Etapa 2: Criar um banco de dados
 
-À direita do painel de navegação, você pode usar o editor de consultas do Athena para inserir e executar as consultas e instruções.
+1. À direita do painel de navegação, você pode usar o editor de consultas do Athena para inserir e executar as consultas e instruções.
 
-Para criar um banco de dados denominado meubanco, insira a instrução CREATE DATABASE
+2. Para criar um banco de dados denominado meubanco, insira a instrução CREATE DATABASE
 
-CREATE DATABASE meubanco
+3. CREATE DATABASE meubanco
 Selecione Run (Executar) ou pressione Ctrl+ENTER.
 
-Na lista Database (Banco de dados) à esquerda, escolha meubanco para torná-lo seu banco de dados atual.
+4. Na lista Database (Banco de dados) à esquerda, escolha meubanco para torná-lo seu banco de dados atual.
 
-Etapa 3: Criar uma tabela
+**Resultado da etapa 2**
+
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/2.png)
+
+## Etapa 3: Criar uma tabela
+
 Agora que você tem um banco de dados, pode criar uma tabela do Athena para ele. A tabela criada será baseada nos dados de log de exemplo do Amazon CloudFront, no local s3://athena-examples-myregion/cloudfront/plaintext/, em que myregion é a sua Região da AWS atual. Abaixo um exemplo:
 
 
