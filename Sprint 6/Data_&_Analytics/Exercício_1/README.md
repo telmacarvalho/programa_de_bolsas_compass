@@ -129,7 +129,11 @@ No JSON acima, substitua, na seção Resource, o valor de Bucket-Name para o nom
 Na política de bucket do exemplo anterior, Bucket-Name é um espaço reservado para o nome do bucket. Para usar essa política de bucket com seu próprio bucket, você deve atualizar esse nome para corresponder ao nome do seu bucket.\
 ![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/2.png)\
 ![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/3.png)\
+
+6. Selecione Save changes.
+
+Uma mensagem é exibida indicando que a política de bucket foi adicionada com sucesso.\
 ![Print 4](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/4.png)
 
-
+Se você vir um erro que diz Policy has invalid resource, confirme se o nome do bucket na política de bucket corresponde ao nome do seu bucket. Se você receber uma mensagem de erro e não puder salvar a política do bucket, verifique suas configurações de acesso público para confirmar que você permite acesso público ao bucket.
 
