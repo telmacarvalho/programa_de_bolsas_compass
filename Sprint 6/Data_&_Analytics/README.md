@@ -7,7 +7,7 @@ Objetivo:
 Explorar as capacidades do serviço AWS S3.  Nos passos que seguem, você será guiado pelas configurações necessárias para que um bucket do Amazon S3 funcione como hospedagem de conteúdo estático.
 
 ## [Lab AWS Athena](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena)
-P
-ré-requisitos:
+
+Pré-requisitos:
 
 Ter executado o laboratório de AWS S3.
