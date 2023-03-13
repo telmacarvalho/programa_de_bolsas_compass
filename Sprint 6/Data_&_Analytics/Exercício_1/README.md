@@ -207,3 +207,18 @@ Depois de habilitar a hospedagem de sites estáticos para seu bucket, faça uplo
 
     - Escolha Upload (Fazer upload) e siga as instruções para escolher e fazer upload do arquivo de índice.
 
+## Etapa 7: testar o endpoint do site
+
+Depois de configurar a hospedagem de site estático para seu bucket, você pode testá-lo em seu navegador. Para tal, siga os passos a seguir:
+
+
+1. Faça login no AWS Management Console e abra o console do Amazon S3 em https://console.aws.amazon.com/s3/.
+
+2. Na lista Buckets, selecione o nome do bucket que você configurou hospedagem de conteúdo estático.
+
+3. Escolha Properties (Propriedades).
+
+4. Na parte inferior da página, em Static website hosting (Hospedagem estática de sites), escolha seu Bucket website endpoint (Endpoint de site do Bucket). Seu documento de índice é aberto em uma janela separada do navegador.
+
+Agora você tem um site hospedado no Amazon S3. Esse site está disponível publicamente no endpoint de site do Amazon S3. Você pode também ter um domínio, como example.com, para exibir o conteúdo do site que criou. Neste caso, é preciso executar etapas adicionais.
+
