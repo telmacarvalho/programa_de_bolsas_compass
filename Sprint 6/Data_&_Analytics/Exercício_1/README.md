@@ -187,7 +187,9 @@ Vamos aos passo para configuração do documento de índice:
 
 Depois de habilitar a hospedagem de sites estáticos para seu bucket, faça upload para o bucket de um arquivo HTML para notificação de erros.  Veja quais são os passos:
 
-1. Crie um documento de erro com o nome 404.html.
+1. Crie um documento de erro com o nome 404.html.\
+![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_6/1.png)
+
 
 2. Salve o arquivo localmente.
 
@@ -199,7 +201,9 @@ Depois de habilitar a hospedagem de sites estáticos para seu bucket, faça uplo
 
 5. Para fazer upload do documento de erros para o bucket, siga um destes procedimentos:
 
-    - Arraste e solte o arquivo de índice na listagem de buckets do console.
+    - Arraste e solte o arquivo de índice na listagem de buckets do console.\
+    ![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_6/2.png)\
+    ![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_6/3.png)
 
     - Escolha Upload (Fazer upload) e siga as instruções para escolher e fazer upload do arquivo de índice.
 
