@@ -92,4 +92,40 @@ Por padrão, o Amazon S3 bloqueia o acesso público à sua conta e aos seus buck
 
 O Amazon S3 desativa as configurações do bloqueio de acesso público para seu bucket. Para criar um site público e estático, você também pode ter que editar as configurações de Bloqueio de acesso público para sua conta antes de adicionar uma política de bucket. Se as configurações da conta para bloquear acesso público estiverem ativadas no momento, você verá uma observação em Block public access (bucket settings) (Bloqueio de acesso público (configurações de bucket)).
 
+## Etapa 4: Adicionar política de bucket que torna o conteúdo do bucket publicamente disponível
+
+Depois de editar as configurações do bloqueio de acesso público do S3, é possível adicionar uma política de bucket para conceder acesso público de somente leitura ao bucket. Ao conceder um acesso público de leitura, qualquer pessoa na Internet poderá acessar seu bucket.
+
+1. Em Buckets, escolha o nome do seu bucket.
+
+2. Escolha Permissions (Permissões).
+
+3. Em Bucket Policy (Política de bucket), escolha Edit (Editar).
+
+4. Para conceder acesso público de leitura ao site, copie a política de bucket a seguir e cole-a no Bucket policy editor (Editor de política de bucket).
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ]
+        }
+    ]
+} 
+```
+No JSON acima, substitua, na seção Resource, o valor de Bucket-Name para o nome do seu bucket.
+
+Na política de bucket do exemplo anterior, Bucket-Name é um espaço reservado para o nome do bucket. Para usar essa política de bucket com seu próprio bucket, você deve atualizar esse nome para corresponder ao nome do seu bucket.
+
+
+
 
