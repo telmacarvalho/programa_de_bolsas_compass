@@ -1,6 +1,9 @@
 # Desenvolvimento das etapas do exercício Lab AWS Athena da Sprint 6
 
-## Etapa 1: Configurar Athena
+<details>
+<summary>
+<h1>Etapa 1: Configurar Athena</h1>
+</summary>
 
 1. Faça login no AWS Management Console e abra o console do Amazon S3 em https://console.aws.amazon.com/s3/.
 
@@ -42,7 +45,9 @@
 
 11. Selecione Editor para alternar para o editor de consultas.
 
-**Resultado da etapa 1**
+</details>
+
+**Print do resultado da etapa 1:**
 
 ![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/1.png)
 
@@ -57,7 +62,7 @@ Selecione Run (Executar) ou pressione Ctrl+ENTER.
 
 4. Na lista Database (Banco de dados) à esquerda, escolha meubanco para torná-lo seu banco de dados atual.
 
-**Resultado da etapa 2**
+**Print do resultado da etapa 2:**
 
 ![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/2.png)
 
@@ -65,8 +70,7 @@ Selecione Run (Executar) ou pressione Ctrl+ENTER.
 
 Agora que você tem um banco de dados, pode criar uma tabela do Athena para ele. A tabela criada será baseada nos dados de log de exemplo do Amazon CloudFront, no local s3://athena-examples-myregion/cloudfront/plaintext/, em que myregion é a sua Região da AWS atual. Abaixo um exemplo:
 
-
-
+```
 CREATE EXTERNAL TABLE IF NOT EXISTS data.cloudfront_logs (
   `Date` DATE,
   Time STRING,
@@ -84,8 +88,11 @@ CREATE EXTERNAL TABLE IF NOT EXISTS data.cloudfront_logs (
   FIELDS TERMINATED BY '\t'
   LINES TERMINATED BY '\n'
   LOCATION 's3://athena-examples-my-region/cloudfront/plaintext/';
-Elabore a query para criar a tabela no banco de dados que você criou. Abaixo apresentamos um template para a estrutura de dados.
+```
 
+1. Elabore a query para criar a tabela no banco de dados que você criou. Abaixo apresentamos um template para a estrutura de dados.
+
+```
 CREATE EXTERNAL TABLE IF NOT EXISTS <nome do banco de dados>.<nome da tabela> (
   <nome dos campos com o tipo de dados>
 )
@@ -95,23 +102,64 @@ WITH SERDEPROPERTIES (
  'field.delim' = ','
 )
 LOCATION <caminho do S3> 
-Escolha Run.
+```
+2. Escolha Run.
 
-Se a importação for bem-sucedida, você verá uma mensagem verde Completed (Concluído)
+3. Se a importação for bem-sucedida, você verá uma mensagem verde Completed (Concluído)
 
-Algumas itens a observar para a atividade:
+Alguns itens a observar para a atividade:
 
+- Definimos todos os campos no conjunto de dados e demos a eles um tipo apropriado.
 
+- Informamos ao Athena para usar o analisador LazySimpleSerDe CSV. Usamos esse analisador porque ele permite valores nulos para números. Ele não suporta valores entre aspas.
 
-Definimos todos os campos no conjunto de dados e demos a eles um tipo apropriado.
+- Informamos ao analisador que os campos são delimitados por vírgulas e que a primeira linha contém nomes de campos que podem ser ignorados.
 
-Informamos ao Athena para usar o analisador LazySimpleSerDe CSV. Usamos esse analisador porque ele permite valores nulos para números. Ele não suporta valores entre aspas.
+- Especificamos o local do arquivo CSV. Precisamos apenas fornecer a pasta, não o arquivo em si.
 
-Informamos ao analisador que os campos são delimitados por vírgulas e que a primeira linha contém nomes de campos que podem ser ignorados.
+4. Teste os dados com a seguinte consulta, substituindo o nome dos campos, banco de dados e tabela pelos nomes que você criou anteriormente:
 
-Especificamos o local do arquivo CSV. Precisamos apenas fornecer a pasta, não o arquivo em si.
-
-Teste os dados com a seguinte consulta, substituindo o nome dos campos, banco de dados e tabela pelos nomes que você criou anteriormente:
-
+```
 select nome from nomedobanco.nomedatabela where ano = 1999 order by total limit 15;
-Crie uma consulta que lista os 3 nomes mais usados em cada década desde o 1950 até hoje.
+```
+
+5. Crie uma consulta que lista os 3 nomes mais usados em cada década desde o 1950 até hoje.
+
+**Query desenvolvida:**
+
+```
+with tab_dec_cte as (
+    select 
+    nome,
+	sum(total) as total_name,
+	(ano / 10) * 10 as decade
+	from meubanco.nomes
+	where ano >= 1950
+	group by nome,
+		(ano / 10) * 10
+	order by decade asc,
+		total_name desc
+), ranked_cte as (
+  select tab_dec_cte.nome,
+			total_name,
+			decade,
+			rank() over(partition by decade	order by total_name desc) as rn
+		from tab_dec_cte
+)
+
+select 
+    nome,
+	decade
+from ranked_cte
+where rn <= 3
+order by decade
+```
+**Resultado obtido:**
+
+[Downloaded results](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/Result_Lab_AWS_Athena.csv)
+
+**Prints do resultado da etapa 3:**
+
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/3.png)\
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/4.png)\
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/5.png)
