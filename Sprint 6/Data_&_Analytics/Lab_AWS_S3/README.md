@@ -128,7 +128,7 @@ No JSON acima, substitua, na seção Resource, o valor de Bucket-Name para o nom
 
 Na política de bucket do exemplo anterior, Bucket-Name é um espaço reservado para o nome do bucket. Para usar essa política de bucket com seu próprio bucket, você deve atualizar esse nome para corresponder ao nome do seu bucket.\
 ![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_S3/Etapa_4/2.png)\
-![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_S3/Etapa_4/3.png)\
+![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_S3/Etapa_4/3.png)
 
 6. Selecione Save changes.
 
