@@ -183,7 +183,23 @@ Vamos aos passo para configuração do documento de índice:
 ![Print 7](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_5/7.png)\
 ![Print 8](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_5/8.png)
 
+## Etapa 6: configurar documento de erros
 
+Depois de habilitar a hospedagem de sites estáticos para seu bucket, faça upload para o bucket de um arquivo HTML para notificação de erros.  Veja quais são os passos:
 
+1. Crie um documento de erro com o nome 404.html.
 
+2. Salve o arquivo localmente.
+
+    O nome do documento de erros diferencia maiúsculas e minúsculas e deve corresponder exatamente ao nome que você insere ao habilitar a hospedagem estática do site. Por exemplo, se você inserir 404.html como o nome do Error document (Documento de erro) na caixa de diálogo Static website hosting (Hospedagem de site estático), o nome de arquivo do documento de erro também deve ser 404.html.
+
+3. Faça login no AWS Management Console e abra o console do Amazon S3 em https://console.aws.amazon.com/s3/
+
+4. Na lista Buckets, selecione o nome do bucket que você configurou hospedagem de conteúdo estático.
+
+5. Para fazer upload do documento de erros para o bucket, siga um destes procedimentos:
+
+    - Arraste e solte o arquivo de índice na listagem de buckets do console.
+
+    - Escolha Upload (Fazer upload) e siga as instruções para escolher e fazer upload do arquivo de índice.
 
