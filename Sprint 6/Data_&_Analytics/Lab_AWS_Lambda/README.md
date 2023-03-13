@@ -73,6 +73,7 @@ Response
 Este erro ocorre pois o serviço AWS Lambda não possui a biblioteca pandas. Precisamos de uma layer para importar estas bibliotecas necessárias a nossa Lambda.
 
 </details>
+
 **Print do resultado da etapa 2:**
 
 ![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Lambda/2.png)
@@ -163,6 +164,7 @@ docker cp <id do container>:/root/layer_dir/minha-camada-pandas.zip ./
 14. Clique em Criar
 
 </details>
+
 **Print do resultado da etapa 3:**
 
 ![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Lambda/3.png)
@@ -191,9 +193,8 @@ docker cp <id do container>:/root/layer_dir/minha-camada-pandas.zip ./
 ```
 *Dica*: Provavelmente será necessário aumentar o tempo limite e o tamanho da memória da Lambda.
 
-
-
 </details>
+
 **Print do resultado da etapa 4:**
 
 ![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Lambda/4.png)
