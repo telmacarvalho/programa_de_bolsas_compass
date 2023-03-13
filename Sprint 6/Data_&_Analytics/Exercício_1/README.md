@@ -156,23 +156,28 @@ Vamos aos passo para configuração do documento de índice:
 </body>
 </html>
 ```
+![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_5/1.png)
+
 2. Salvar as alterações.
 
     O nome do documento de índice deve corresponder exatamente ao nome do documento de índice que você inseriu na caixa de diálogo Hospedagem de site estático. O nome do documento de índice diferencia maiúsculas de minúsculas. Por exemplo, se você informou index.html na configuração do bucket, seu documento de índice também deverá ser index.html (e não Index.html, por exemplo).
 
 
-
 3. Faça login no AWS Management Console e abra o console do Amazon S3 em https://console.aws.amazon.com/s3/.
-
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_5/2.png)
 4. Na lista Buckets, selecione o nome do bucket que você configurou hospedagem de conteúdo estático.
+![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_5/3.png)
 
 5. Para fazer upload do documento de índice para o bucket, siga um destes procedimentos:
 
-    - Arraste e solte o arquivo de índice na listagem de buckets do console.
+    - Arraste e solte o arquivo de índice na listagem de buckets do console.\
+    ![Print 4](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_5/5.png)
 
-    - Escolha Upload (Fazer upload) e siga as instruções para escolher e fazer upload do arquivo de índice.
+    - Escolha Upload (Fazer upload) e siga as instruções para escolher e fazer upload do arquivo de índice.\
 
-6. Crie uma pasta chamada dados e, após, faça upload do conteúdo do site (arquivo CSV) para ela.
+
+6. Crie uma pasta chamada dados e, após, faça upload do conteúdo do site (arquivo CSV) para ela.\
+![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_5/1.png)
 
 
 
