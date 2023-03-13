@@ -69,4 +69,20 @@ Depois de criar um bucket, você pode habilitar a hospedagem de site estático n
 ![Print 8](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_2/8.png)
 
 
+## Etapa 3: editar as configurações do Bloqueio de acesso público
+
+Por padrão, o Amazon S3 bloqueia o acesso público à sua conta e aos seus buckets. Se quiser usar um bucket para hospedar um site estático, use estas etapas para editar as configurações de bloqueio de acesso público.
+
+1. Abra o console do Amazon S3 em https://console.aws.amazon.com/s3/.
+
+2. Escolha o nome do bucket configurado como um site estático.
+
+3. Escolha Permissions (Permissões).
+
+4. Em Block public access (bucket settings) (Bloqueio de acesso público (configurações de bucket), escolha Edit (Editar).
+
+5. Desmarque Block all public access (Bloquear todo acesso público) e escolha Save changes (Salvar alterações).
+
+O Amazon S3 desativa as configurações do bloqueio de acesso público para seu bucket. Para criar um site público e estático, você também pode ter que editar as configurações de Bloqueio de acesso público para sua conta antes de adicionar uma política de bucket. Se as configurações da conta para bloquear acesso público estiverem ativadas no momento, você verá uma observação em Block public access (bucket settings) (Bloqueio de acesso público (configurações de bucket)).
+
 
