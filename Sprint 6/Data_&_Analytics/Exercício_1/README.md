@@ -98,9 +98,11 @@ Depois de editar as configurações do bloqueio de acesso público do S3, é pos
 
 1. Em Buckets, escolha o nome do seu bucket.
 
-2. Escolha Permissions (Permissões).
+2. Escolha Permissions (Permissões).\
+![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/1.png)
 
-3. Em Bucket Policy (Política de bucket), escolha Edit (Editar).
+3. Em Bucket Policy (Política de bucket), escolha Edit (Editar).\
+![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/1.png)
 
 4. Para conceder acesso público de leitura ao site, copie a política de bucket a seguir e cole-a no Bucket policy editor (Editor de política de bucket).
 
@@ -124,8 +126,10 @@ Depois de editar as configurações do bloqueio de acesso público do S3, é pos
 ```
 No JSON acima, substitua, na seção Resource, o valor de Bucket-Name para o nome do seu bucket.
 
-Na política de bucket do exemplo anterior, Bucket-Name é um espaço reservado para o nome do bucket. Para usar essa política de bucket com seu próprio bucket, você deve atualizar esse nome para corresponder ao nome do seu bucket.
-
+Na política de bucket do exemplo anterior, Bucket-Name é um espaço reservado para o nome do bucket. Para usar essa política de bucket com seu próprio bucket, você deve atualizar esse nome para corresponder ao nome do seu bucket.\
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/2.png)\
+![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/3.png)\
+![Print 4](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Exerc%C3%ADcio_1/Etapa_4/4.png)
 
 
 
