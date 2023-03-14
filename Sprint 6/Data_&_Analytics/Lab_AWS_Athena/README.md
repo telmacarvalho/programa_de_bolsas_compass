@@ -49,7 +49,7 @@
 
 **Print do resultado da etapa 1:**
 
-![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/1.png)
+![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Athena/1.png)
 
 <details>
 <summary>
@@ -70,7 +70,7 @@ Selecione Run (Executar) ou pressione Ctrl+ENTER.
 
 **Print do resultado da etapa 2:**
 
-![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/2.png)
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Athena/2.png)
 
 <details>
 <summary>
@@ -171,6 +171,6 @@ order by decade
 
 **Prints do resultado da etapa 3:**
 
-![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/3.png)\
-![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/4.png)\
-![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/5.png)
+![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Athena/3.png)\
+![Print 4](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Athena/4.png)\
+![Print 5](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Athena/5.png)
