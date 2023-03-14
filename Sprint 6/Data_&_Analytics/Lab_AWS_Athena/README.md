@@ -167,7 +167,7 @@ order by decade
 ```
 **Resultado obtido com a query acima:**
 
-[Downloaded results](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/%20Lab_AWS_Athena/Result_Lab_AWS_Athena.csv)
+[Downloaded results](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Athena/Result_Lab_AWS_Athena.csv)
 
 **Prints do resultado da etapa 3:**
 
