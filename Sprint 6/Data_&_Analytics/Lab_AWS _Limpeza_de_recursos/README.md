@@ -20,4 +20,5 @@ Lembre-se de:
 **Prints do resultado da etapa única:**
 
 ![Print 1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS%20_Limpeza_de_recursos/1.png)\
-![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS%20_Limpeza_de_recursos/2.png)
+![Print 2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS%20_Limpeza_de_recursos/2.png)\
+![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS%20_Limpeza_de_recursos/3.png)
