@@ -169,7 +169,7 @@ docker cp <id do container>:/root/layer_dir/minha-camada-pandas.zip ./
 
 ![Print 3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Lambda/3.png)
 
-**Repositório da etapa 3**
+**Repositório da etapa 3:**
 
 [Dockerfile](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Lambda/Dockerfile)\
 [Arquivo zip](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%206/Data_%26_Analytics/Lab_AWS_Lambda/minha-camada-pandas.zip)
