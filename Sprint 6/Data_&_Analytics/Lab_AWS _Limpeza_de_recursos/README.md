@@ -2,7 +2,7 @@
 
 <details>
 <summary>
-<h1>Etapa única</h1>
+<h2>Etapa única</h2>
 </summary>
 
 Após concluir todas as etapas dos laboratórios e de colher as evidências/códigos para repassar ao monitor (a), você deve realizar a limpeza do que foi criado, para não incorrer em custos desnecessários.

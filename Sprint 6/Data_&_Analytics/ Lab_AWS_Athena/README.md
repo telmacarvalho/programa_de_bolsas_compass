@@ -2,7 +2,7 @@
 
 <details>
 <summary>
-<h1>Etapa 1: Configurar Athena</h1>
+<h2>Etapa 1: Configurar Athena</h2>
 </summary>
 
 1. Faça login no AWS Management Console e abra o console do Amazon S3 em https://console.aws.amazon.com/s3/.
@@ -53,7 +53,7 @@
 
 <details>
 <summary>
-<h1>Etapa 2: Criar um banco de dados</h1>
+<h2>Etapa 2: Criar um banco de dados</h2>
 </summary>
 
 
@@ -74,7 +74,7 @@ Selecione Run (Executar) ou pressione Ctrl+ENTER.
 
 <details>
 <summary>
-<h1>Etapa 3: Criar uma tabela</h1>
+<h2>Etapa 3: Criar uma tabela</h2>
 </summary>
 
 Agora que você tem um banco de dados, pode criar uma tabela do Athena para ele. A tabela criada será baseada nos dados de log de exemplo do Amazon CloudFront, no local s3://athena-examples-myregion/cloudfront/plaintext/, em que myregion é a sua Região da AWS atual. Abaixo um exemplo:
