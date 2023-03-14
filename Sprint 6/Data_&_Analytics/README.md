@@ -22,3 +22,6 @@ Ter executado os Laboratórios de S3 e Athena.
 
 Ter o software Docker instalado em sua máquina.
 
+## [Lab AWS - Limpeza de recursos](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%206/Data_%26_Analytics/Lab_AWS%20_Limpeza_de_recursos)
+
+
