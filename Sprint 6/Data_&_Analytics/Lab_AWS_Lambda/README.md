@@ -2,7 +2,7 @@
 
 <details>
 <summary>
-<h1>Etapa 1: Criar a função do Lambda</h1>
+<h2>Etapa 1: Criar a função do Lambda</h2>
 </summary>
 
 1. No console do AWS Lambda, selecione Criar uma função. Observação: o console só mostra esta página se não houver funções do Lambda criadas. Se já tiverem sido criadas funções, a opção será exibida a página Lambda > Funções.
@@ -21,7 +21,7 @@
 
 <details>
 <summary>
-<h1>Etapa 2: Construir o código</h1>
+<h2>Etapa 2: Construir o código</h2>
 </summary>
 
 A função será criada e você será redirecionado para o editor de funções do console. Por padrão, será criado o arquivo nomeado lambda_function.py com o código abaixo:
@@ -80,7 +80,7 @@ Este erro ocorre pois o serviço AWS Lambda não possui a biblioteca pandas. Pre
 
 <details>
 <summary>
-<h1>Etapa 3: Criar uma Layer</h1>
+<h2>Etapa 3: Criar uma Layer</h2>
 </summary>
 
 Afinal, o que são Layers (camadas)? De acordo com a documentação, as camadas do Lambda fornecem um modo conveniente de empacotar bibliotecas e outras dependências que você pode usar com suas funções Lambda. O uso de camadas reduz o tamanho dos arquivos de implantação carregados e acelera a implantação do código.
@@ -171,7 +171,7 @@ docker cp <id do container>:/root/layer_dir/minha-camada-pandas.zip ./
 
 <details>
 <summary>
-<h1>Etapa 4: Utilizando a Layer</h1>
+<h2>Etapa 4: Utilizando a Layer</h2>
 </summary>
 
 1. No menu, escolha Função e localize a função Lambda criada na Etapa 1
