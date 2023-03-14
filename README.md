@@ -86,6 +86,6 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] AWS Skill Builder - Best Practices for Data Warehousing with Amazon Redshift (Portuguese)
 - [x] AWS Skill Builder - Serverless Analytics (Portuguese)
 - [x] AWS Skill Builder - Why Analytics for Games (Portuguese)
-- [ ] Data & Analytics - PB - AWS 6/10 (*in progress*)
+- [x] Data & Analytics - PB - AWS 6/10
 
 
