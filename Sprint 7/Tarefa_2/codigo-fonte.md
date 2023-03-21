@@ -6,7 +6,7 @@ $ pyspark
 
 Armazena o texto em forma de data frame
 ```
->>> text = spark.read.text("texto.md")
+>>> text = spark.read.text("README.md")
 ```
 
 Filtra o data frame pela coluna value, eliminando as quebras de linhas
