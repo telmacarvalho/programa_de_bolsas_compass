@@ -1,9 +1,25 @@
 import boto3
+from datetime import date
 
 
-movies = open('movies.csv', 'rb')
-series = open('series.csv', 'rb')
-teste = open('teste.csv', 'rb')
+def rawPath(file):
+    names = file.split('.')
+    today = date.today()
+    date_path = today.strftime("%Y/%m/%d")
+    path = 'Raw/Local/' + names[1].upper() + '/' + \
+        names[0].capitalize() + '/' + date_path + '/' + file
 
-s3 = boto3.resource('s3')
-s3.Bucket('my-bucket').put_object(Key='teste.csv', Body=data)
+    return path
+
+
+s3 = boto3.client('s3')
+
+
+def upload(file, bucket):
+    with open(file, "rb") as f:
+        s3.upload_fileobj(f, bucket,
+                          rawPath(file))
+
+
+upload('movies.csv', 'data-lake-da-telma')
+upload('series.csv', 'data-lake-da-telma')
