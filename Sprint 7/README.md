@@ -64,7 +64,7 @@ Usando o Spark Shell, faça um programa que conte as palavras de um arquivo READ
 
 [Jupyter notebook](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/pyspark-notebook.ipynb)
 
-**Prints do resultado da etapa 1:**
+**Prints do resultado do passo 2:**
 
 ![Print1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/prints/1_pyspark_container.png)
 
@@ -103,12 +103,12 @@ Ingestão Batch: a ingestão dos arquivos CSV em Bucket Amazon S3 RAW Zone. Nest
 
       - no momento da gravação dos dados deve-se considerar o padrão: ```<nome do bucket>\<camada de armazenamento>\<origem do dado>\<formato do dado>\<especificação do dado>\<data de processamento separada por ano\mes\dia>\<arquivo>```
 
-            Por exemplo:
+        Por exemplo:
 
-                   ```S3:\\data-lake-do-fulano\Raw\Local\CSV\Movies\2022\05\02\movies.csv
+                   S3:\\data-lake-do-fulano\Raw\Local\CSV\Movies\2022\05\02\movies.csv
 
                    S3:\\data-lake-do-fulano\Raw\Local\CSV\Series\2022\05\02\series.csv
-                    ```
+
 2. Criar container Docker com um volume para armazenar os arquivos CSV e executar processo Python implementado
 
 3. Executar localmente o container docker para realizar a carga dos dados ao S3
@@ -117,3 +117,9 @@ Ingestão Batch: a ingestão dos arquivos CSV em Bucket Amazon S3 RAW Zone. Nest
 [Desafio](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_3/Desafio_parte_1_ETL.py)
 
 [Dockerfile](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_3/Dockerfile)
+
+**Prints do resultado do desafio**
+
+![Print1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_3/prints/movies_s3.png)
+
+![Print2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_3/prints/series_s3.png)
