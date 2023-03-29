@@ -11,12 +11,15 @@
 ## Desenvolvimento detalhado das atividades da Sprint 7
 
 ### Tarefa 1: Python com Pandas e Numpy
-    [Jupyter Notebook](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_1.ipynb)
+[Jupyter Notebook](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_1.ipynb)
+
+### Tarefa 2: Apache Spark - Contador de Palavras
 
 <details>
 <summary>
-<h3>1. Siga os passos a seguir para executar o Spark utilizando uma imagem Docker:</h3>
+<b>Passo 1</b>
 </summary>
+Siga os passos a seguir para executar o Spark utilizando uma imagem Docker:
 
 1. Instalar o Docker (https://docs.docker.com/desktop/install/windows-install)
 
@@ -46,5 +49,27 @@
 
 [Devcontainer](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%207/Tarefa_2/.devcontainer)
 
+<details>
+<summary>
+<b>Passo 2</b>
+</summary>
 
-**Print do resultado da etapa 1:**
+Usando o Spark Shell, faça um programa que conte as palavras de um arquivo README.md (que você mesmo pode criar). Caso opte por um arquivo existente, podes utilizar o disponível neste endereço: https://github.com/apache/spark/blob/master/README.md
+
+</details>
+
+[Código-fonte](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/codigo-fonte.md)
+
+[Arquivo README](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/README.md)
+
+[Jupyter notebook](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/pyspark-notebook.ipynb)
+
+**Prints do resultado da etapa 1:**
+
+![Print1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/prints/1_pyspark_container.png)
+
+![Print2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/prints/2_abrindo_jupyter_notebook.png)
+
+![Print3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/prints/3_abrindo_jupyter_notebook.png)
+
+![Print4](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/prints/4_pyspark_jupyter_notebook.png)
