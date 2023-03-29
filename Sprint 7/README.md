@@ -8,10 +8,10 @@
 
 - [Tarefa 3: Desafio Parte 1 - ETL](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%207/Tarefa_3)
 
-## Desenvolvimento detalhado das atividades da Sprint 7
+## Desenvolvimento detalhado de cada atividade
 
 ### Tarefa 1: Python com Pandas e Numpy
-[Jupyter Notebook](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_1.ipynb)
+[Jupyter notebook](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_1.ipynb)
 
 ### Tarefa 2: Apache Spark - Contador de Palavras
 
@@ -73,3 +73,13 @@ Usando o Spark Shell, faça um programa que conte as palavras de um arquivo READ
 ![Print3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/prints/3_abrindo_jupyter_notebook.png)
 
 ![Print4](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Tarefa_2/prints/4_pyspark_jupyter_notebook.png)
+
+### Laboratório AWS Glue
+
+Obs: devido a erro no momento de gerar o jupyter dentro do Glue, não foi possível realizar toda a atividade
+
+**Prints do último passo executado**
+
+![Print1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Lab_AWS_Glue/prints/1_criando_notebook.png)
+
+![Print2](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%207/Lab_AWS_Glue/prints/2_%20erro.png)
