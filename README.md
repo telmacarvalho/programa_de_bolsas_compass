@@ -94,7 +94,7 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 - [x] Formação Spark com Pyspark : o Curso Completo
 - [x] [Data & Analytics - PB - AWS 7/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%207)
 
-## [SPRINT 8](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%208)
+## [SPRINT 8](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint_8)
 
 - [x] Formação Spark com Pyspark : o Curso Completo
 - [ ] [Data & Analytics - PB - AWS 8/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint%208) (*in progress*)
