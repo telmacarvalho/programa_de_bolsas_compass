@@ -29,7 +29,7 @@ Esta atividade corresponde a um laboratório. Não esperamos que você registre 
 
 <details>
 <summary>
-<b>Etapa 1- Criando sua conta no TMDB</b>
+<b>Etapa 1 - Criando sua conta no TMDB</b>
 </summary>
 Será preciso criar uma conta no porta do TMDB para, após, solicitar as chaves de acesso para uso da API.
 
