@@ -58,6 +58,9 @@ Os passos são:
     - No Resumo, informe que o objetivo é para estudos
 </details>
 
+**Print do resultado da etapa 1:**
+![Print1](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint%208/Prints/Print1.png)
+
 <details>
 <summary>
 <b>Etapa 2 - Testando rapidamente as credenciais e a biblioteca</b>
