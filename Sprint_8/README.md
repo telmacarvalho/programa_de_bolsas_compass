@@ -6,4 +6,4 @@
 
 - [Tarefa 4: Exercícios - Geração de massa de dados](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_8/Tarefa_4.ipynb)
 
-- Tarefa 5: Exercícios - Apache Spark
+- [Tarefa 5: Exercícios - Apache Spark](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_8/Tarefa_5.ipynb)
