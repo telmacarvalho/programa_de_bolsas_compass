@@ -2,7 +2,7 @@
 
 - [Tarefa 2: Exercício TMDB](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_8/Tarefa_2.ipynb)
 
-- Tarefa 3: Desafio Parte 2 - Ingestão de dados do Twitter e/ou TMBD
+- [Tarefa 3: Desafio Parte 2 - Ingestão de dados do Twitter e/ou TMBD](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_8/Tarefa_3.ipynb)
 
 - [Tarefa 4: Exercícios - Geração de massa de dados](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_8/Tarefa_4.ipynb)
 
