@@ -126,7 +126,7 @@ FROM tb_locacao
 ORDER BY idLocacao 
 	
 -- Cria uma nova tabela de locacao com dependências únicas
-CREATE TABLE tb_locacao2
+CREATE TABLE tb_locacao_v2
 AS SELECT 
 		idLocacao,
 		idCliente,
@@ -144,6 +144,4 @@ ORDER BY idLocacao
 
 -- Exibe a tabela tb_locacao 
 SELECT *
-FROM tb_locacao2  
-
-
+FROM tb_locacao_v2
