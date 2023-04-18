@@ -1,9 +1,9 @@
--- Exibe todos os dados da tabela tb_locacao 
+-- Exibe todos os dados da tabela tb_locacao ordenado pelo seu id a fim de verificar se é preciso colocar na primeira forma (FN1)
 SELECT * 
 FROM tb_locacao tl
 ORDER BY idLocacao 
 
--- Exibe os atributos do objeto idCliente ordenado pelo seu id
+-- Exibe os atributos do objeto idCliente ordenado pelo seu id a fim de separar suas dependências na segunda forma (FN2)
 SELECT 
 	idCliente,
 	nomeCliente,
@@ -13,7 +13,7 @@ SELECT
 FROM tb_locacao 
 ORDER BY idCliente 
 
--- Cria nova tabela de clientes sem duplicidades
+-- Cria nova tabela de clientes sem duplicidades aplicando a segunda forma (FN2)
 CREATE TABLE tb_cliente
 AS SELECT 
 		idCliente,
@@ -30,7 +30,7 @@ SELECT *
 FROM tb_cliente
 
 
--- Exibe os atributos do objeto idCarro ordenado pelo seu id
+-- Exibe os atributos do objeto idCarro ordenado pelo seu id a fim de separar suas dependências na segunda forma (FN2)
 SELECT 
 	idCarro,
 	classiCarro,
@@ -42,7 +42,8 @@ SELECT
 FROM tb_locacao 
 ORDER BY idCarro 
 
--- Cria nova tabela de carros sem duplicidades e sem o atibuto tipoCombustível, o qual será atribuído em outra tabela
+-- Cria nova tabela de carros sem duplicidades aplicando a segunda forma (FN2) e sem o atibuto tipoCombustível, 
+-- o qual será atribuído em outra tabela, eliminando, assim, as dependências transitivas na terceira forma (FN3)
 CREATE TABLE tb_carro 
 AS SELECT 
 		idCarro,
@@ -67,7 +68,7 @@ SELECT
 FROM tb_locacao
 ORDER BY idcombustivel 
 
--- Cria nova tabela de combustível sem duplicidades 
+-- Cria nova tabela de combustível sem duplicidades aplicando a terceira forma (FN3)
 CREATE TABLE tb_combustivel
 AS SELECT 
 		idcombustivel,
@@ -81,7 +82,7 @@ SELECT *
 FROM tb_combustivel 
 
 
---Exibe os atributos do objeto idVendendor ordenado pelo seu id
+--Exibe os atributos do objeto idVendendor ordenado pelo seu id a fim de separar suas dependências na segunda forma (FN2)
 SELECT 
 	idVendedor,
 	nomeVendedor,
@@ -90,7 +91,7 @@ SELECT
 FROM tb_locacao
 ORDER BY idVendedor 
 
--- Cria nova tabela de vendedores sem duplicidades
+-- Cria nova tabela de vendedores sem duplicidades aplicando a segunda forma (FN2)
 CREATE TABLE tb_vendedor
 AS SELECT 
 		idVendedor,
@@ -127,7 +128,7 @@ SELECT
 FROM tb_locacao
 ORDER BY idLocacao
 
--- Cria uma nova tabela de locacao com dependências únicas
+-- Cria uma nova tabela de locacao com dependências únicas aplicando a segunda forma (FN2)
 CREATE TABLE tb_locacao_v2
 AS SELECT 
 		idLocacao,
