@@ -3,7 +3,7 @@ SELECT *
 FROM tb_locacao tl
 ORDER BY idLocacao 
 
--- Exibe atributos do objeto idCliente ordenado pelo seu id
+-- Exibe os atributos do objeto idCliente ordenado pelo seu id
 SELECT 
 	idCliente,
 	nomeCliente,
@@ -30,7 +30,7 @@ SELECT *
 FROM tb_cliente
 
 
--- Exibe atributos do objeto idCarro prdenado pelo seu id
+-- Exibe os atributos do objeto idCarro ordenado pelo seu id
 SELECT 
 	idCarro,
 	classiCarro,
@@ -38,11 +38,11 @@ SELECT
 	modeloCarro,
 	anoCarro,
 	idcombustivel,
-	tipoCombustivel 
+	tipoCombustivel
 FROM tb_locacao 
 ORDER BY idCarro 
 
--- Cria nova tabela de carros sem duplicidades
+-- Cria nova tabela de carros sem duplicidades e sem o atibuto tipoCombustível, o qual será atribuído em outra tabela
 CREATE TABLE tb_carro 
 AS SELECT 
 		idCarro,
@@ -60,7 +60,7 @@ SELECT *
 FROM tb_carro
 
 
--- Exibe atributos do objeto idCombustivel ordenado pelo seu id
+-- Exibe os atributos do objeto idCombustivel ordenado pelo seu id
 SELECT 
 	idcombustivel,
 	tipoCombustivel 
@@ -81,7 +81,7 @@ SELECT *
 FROM tb_combustivel 
 
 
---Exibe atributos do objeto idVendendor ordenado pelo seu id
+--Exibe os atributos do objeto idVendendor ordenado pelo seu id
 SELECT 
 	idVendedor,
 	nomeVendedor,
@@ -104,27 +104,29 @@ GROUP BY idVendedor
 SELECT *
 FROM tb_vendedor
 
+
 -- Exibe todos os dados da tabela tb_locacao 
 SELECT * 
 FROM tb_locacao tl
 ORDER BY idLocacao 
 
--- Exibe atributos do objeto idCombustivel com dependências únicas ordenado pelo seu id
+-- Exibe os atributos do objeto idLocacao com dependências únicas ordenado pelo seu id, sem a coluna qdtDiaria, 
+-- que pode ser calculado a partir das datas de locação e ede entrega, e formatando as colunas dataLocacao e dataEntrega 
+-- para a forma ano-mês-dia
 SELECT 
 	idLocacao,
 	idCliente,
 	idCarro,
 	kmCarro,
-	dataLocacao,
+	substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataLocacao,
 	horaLocacao,
-	qtdDiaria,
-	vlrDiaria,
-	dataEntrega,
+	vlrDiaria, 
+	substr(dataEntrega, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataEntrega,
 	horaEntrega,
 	idVendedor 
 FROM tb_locacao
-ORDER BY idLocacao 
-	
+ORDER BY idLocacao
+
 -- Cria uma nova tabela de locacao com dependências únicas
 CREATE TABLE tb_locacao_v2
 AS SELECT 
@@ -132,16 +134,16 @@ AS SELECT
 		idCliente,
 		idCarro,
 		kmCarro,
-		dataLocacao,
+		substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataLocacao,
 		horaLocacao,
 		qtdDiaria,
 		vlrDiaria,
-		dataEntrega,
+		substr(dataEntrega, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataEntrega,
 		horaEntrega,
 		idVendedor 
 FROM tb_locacao
 ORDER BY idLocacao 
 
--- Exibe a tabela tb_locacao 
+-- Exibe a tabela tb_locacao_v2 
 SELECT *
 FROM tb_locacao_v2
