@@ -34,7 +34,6 @@ CREATE TABLE fato_locacao (
   FOREIGN KEY (idCarro) REFERENCES dim_carro(idCarro),
   FOREIGN KEY (idVendedor) REFERENCES dim_vendedor(idVendedor),
   FOREIGN KEY (dataLocacao) REFERENCES dim_dataLocacao(dataLocacao),
-  FOREIGN KEY (dataEntrega) REFERENCES dim_dataEntrega(dataEntrega),
   FOREIGN KEY (dataEntrega) REFERENCES dim_dataEntrega(dataEntrega)
 );
 
