@@ -35,9 +35,7 @@ CREATE TABLE fato_locacao (
   FOREIGN KEY (idVendedor) REFERENCES dim_vendedor(idVendedor),
   FOREIGN KEY (dataLocacao) REFERENCES dim_dataLocacao(dataLocacao),
   FOREIGN KEY (dataEntrega) REFERENCES dim_dataEntrega(dataEntrega),
-  FOREIGN KEY (dataEntrega) REFERENCES dim_dataEntrega(dataEntrega),
-  FOREIGN KEY (horaLocacao) REFERENCES dim_horaEntrega(horaLocacao),
-  FOREIGN KEY (horaEntrega) REFERENCES dim_horaEntrega(horaEntrega)
+  FOREIGN KEY (dataEntrega) REFERENCES dim_dataEntrega(dataEntrega)
 );
 
 -- Exibe os tipos de dados das colunas da tabela criada anteriormente
@@ -60,9 +58,9 @@ SELECT
 	idLocacao,
 	idCliente,
 	idCarro,
-	dataLocacao,
+	substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2),
 	horaLocacao,
-	dataEntrega,
+	substr(dataEntrega, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2),
 	horaEntrega,
 	idVendedor,
 	kmCarro,
@@ -96,7 +94,7 @@ CREATE TABLE dim_cliente (
 -- Exibe os tipos de dados das colunas da dimensão criada anteriormente
 PRAGMA TABLE_INFO(dim_cliente);
 
--- Adiciona dados da tabela tb_locacao na tabela fato_locacao
+-- Adiciona dados da tabela tb_locacao na dimesão dim_cliente
 INSERT INTO dim_cliente(
 	idCliente,
 	nomeCliente,
@@ -114,7 +112,7 @@ FROM tb_locacao
 GROUP BY idCliente 
 ORDER BY idCliente;
 
--- Exibe a dimensão tb_clientes
+-- Exibe a dimensão dim_clientes
 SELECT *
 FROM dim_cliente;
 
@@ -142,7 +140,7 @@ CREATE TABLE dim_carro (
 -- Exibe os tipos de dados das colunas da dimensão criada anteriormente
 PRAGMA TABLE_INFO(dim_carro);
 
--- Adiciona dados da tabela tb_locacao na tabela fato_locacao
+-- Adiciona dados da tabela tb_locacao na dimensão dim_carros
 INSERT INTO dim_carro(
 	idCarro,
 	classiCarro,
@@ -184,11 +182,10 @@ CREATE TABLE dim_vendedor (
 	estadoVendedor TEXT
 );
 
+-- Exibe os tipos de dados das colunas da dimensão criada anteriormente
+PRAGMA TABLE_INFO(dim_vendedor);
 
--- Exibe os tipos de dados das colunas da dimesão criada anteriormente
-PRAGMA TABLE_INFO(dim_vendedor)
-
--- Adiciona dados da tabela tb_locacao na tabela tb_vendedor
+-- Adiciona dados da tabela tb_locacao na dimesão dim_vendedor
 INSERT INTO dim_vendedor (
 	idVendedor,
 	nomeVendedor,
@@ -209,9 +206,7 @@ SELECT *
 FROM dim_vendedor;
 
 
-
-
--- Exibe dados da dimensão data de locação
+-- Exibe dados que serão da dimensão data de locação
 SELECT 
 	substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataLocacao,
 	CAST(strftime('%j', date(substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2))) / 7 AS INTEGER) + 1 AS semanaLocacao,
@@ -225,7 +220,104 @@ SELECT
   END AS trimestreLocacao,
 	substr(dataLocacao, 1, 4) AS anoLocacao
 FROM tb_locacao
-ORDER BY dataLocacao
+ORDER BY dataLocacao;
 
+-- Cria uma nova dimensão de data de locação
+CREATE TABLE dim_dataLocacao(
+	dataLocacao DATE PRIMARY KEY,
+	semanaLocacao INTEGER,
+	diaLocacao INTEGER,
+	mesLocacao INTEGER,
+	trimestreLocacao INTEGER,
+	anoLocacao INTEGER
+);
 
+-- Exibe os tipos de dados das colunas da dimesão criada anteriormente
+PRAGMA TABLE_INFO(dim_dataLocacao);
 
+-- Adiciona dados da tabela tb_locacao na dimensão dim_dataLocacao
+INSERT INTO dim_dataLocacao (
+	dataLocacao,
+	semanaLocacao,
+	diaLocacao,
+	mesLocacao,
+	trimestreLocacao,
+	anoLocacao 
+)
+SELECT
+	substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataLocacao,
+	CAST(strftime('%j', date(substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2))) / 7 AS INTEGER) + 1 AS semanaLocacao,
+	substr(dataLocacao, 7, 2) AS diaLocacao,
+	substr(dataLocacao, 5, 2) AS mesLocacao,
+	CASE
+	    WHEN substr(dataLocacao, 5, 2) BETWEEN '01' AND '03' THEN 1
+	    WHEN substr(dataLocacao, 5, 2) BETWEEN '04' AND '06' THEN 2
+	    WHEN substr(dataLocacao, 5, 2) BETWEEN '07' AND '09' THEN 3
+	    ELSE 4
+  END AS trimestreLocacao,
+	substr(dataLocacao, 1, 4) AS anoLocacao
+FROM tb_locacao
+GROUP BY dataLocacao
+ORDER BY dataLocacao;
+
+-- Exibe a dimensão dim_dataLocacao
+SELECT *
+FROM dim_dataLocacao; 
+
+-- Exibe dados que serão da dimensão data de entrega
+SELECT 
+	substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2) AS dataEntrega,
+	CAST(strftime('%j', date(substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2))) / 7 AS INTEGER) + 1 AS semanaEntrega,
+	substr(dataEntrega, 7, 2) AS diaEntrega,
+	substr(dataEntrega, 5, 2) AS mesEntrega,
+	CASE
+	    WHEN substr(dataEntrega, 5, 2) BETWEEN '01' AND '03' THEN 1
+	    WHEN substr(dataEntrega, 5, 2) BETWEEN '04' AND '06' THEN 2
+	    WHEN substr(dataEntrega, 5, 2) BETWEEN '07' AND '09' THEN 3
+	    ELSE 4
+  END AS trimestreEntrega,
+	substr(dataEntrega, 1, 4) AS anoEntrega
+FROM tb_locacao
+ORDER BY dataEntrega;
+
+-- Cria uma nova dimensão de data de entrega
+CREATE TABLE dim_dataEntrega(
+	dataEntrega TEXT PRIMARY KEY,
+	semanaEntrega INTEGER,
+	diaEntrega INTEGER,
+	mesEntrega INTEGER,
+	trimestreEntrega INTEGER,
+	anoEntrega INTEGER
+);
+
+-- Exibe os tipos de dados das colunas da dimesão criada anteriormente
+PRAGMA TABLE_INFO(dim_dataEntrega);
+
+-- Adiciona dados da tabela tb_locacao na dimensão dim_data_entrega
+INSERT INTO dim_dataEntrega (
+	dataEntrega,
+	semanaEntrega,
+	diaEntrega,
+	mesEntrega,
+	trimestreEntrega,
+	anoEntrega
+)
+SELECT 
+	substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2) AS dataEntrega,
+	CAST(strftime('%j', date(substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2))) / 7 AS INTEGER) + 1 AS semanaEntrega,
+	substr(dataEntrega, 7, 2) AS diaEntrega,
+	substr(dataEntrega, 5, 2) AS mesEntrega,
+	CASE
+	    WHEN substr(dataEntrega, 5, 2) BETWEEN '01' AND '03' THEN 1
+	    WHEN substr(dataEntrega, 5, 2) BETWEEN '04' AND '06' THEN 2
+	    WHEN substr(dataEntrega, 5, 2) BETWEEN '07' AND '09' THEN 3
+	    ELSE 4
+  END AS trimestreEntrega,
+	substr(dataEntrega, 1, 4) AS anoEntrega
+FROM tb_locacao
+GROUP BY dataEntrega
+ORDER BY dataEntrega;
+
+-- Exibe a dimensão dim_data_locacao
+SELECT *
+FROM dim_dataEntrega; 
