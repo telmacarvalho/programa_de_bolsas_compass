@@ -1,6 +1,6 @@
 -- Exibe todos os dados da tabela tb_locacao 
 SELECT * 
-FROM tb_locacao tl
+FROM tb_locacao_v2
 ORDER BY idLocacao; 
 
 -- Exibe dimensões e métricas que irão constar no fato da locacao ordenado pelo seu id
@@ -15,7 +15,7 @@ SELECT
 	idVendedor
 	kmCarro,
 	vlrDiaria
-FROM tb_locacao
+FROM tb_locacao_v2
 ORDER BY idLocacao;
 
 -- Cria a tabela do fato de locacao 
@@ -64,7 +64,7 @@ SELECT
 	idVendedor,
 	kmCarro,
 	vlrDiaria
-FROM tb_locacao
+FROM tb_locacao_v2
 ORDER BY idLocacao;
 
 -- Exibe a tabela fato_locacao
@@ -78,7 +78,7 @@ SELECT
 	cidadeCliente,
 	estadoCliente,
 	paisCliente
-FROM tb_locacao 
+FROM tb_cliente tc  
 ORDER BY idCliente;
 
 -- Cria nova dimensão de clientes 
@@ -107,7 +107,7 @@ SELECT
 	cidadeCliente,
 	estadoCliente,
 	paisCliente
-FROM tb_locacao 
+FROM tb_cliente 
 GROUP BY idCliente 
 ORDER BY idCliente;
 
@@ -123,7 +123,9 @@ SELECT
 	modeloCarro,
 	anoCarro,
 	tipoCombustivel
-FROM tb_locacao 
+FROM tb_carro
+LEFT JOIN tb_combustivel
+WHERE tb_carro.idcombustivel  = tb_combustivel.idcombustivel  
 ORDER BY idCarro;
 
 -- Cria nova dimensão de clientes 
@@ -155,22 +157,25 @@ SELECT
 	modeloCarro,
 	anoCarro,
 	tipoCombustivel
-FROM tb_locacao 
+FROM tb_carro
+LEFT JOIN tb_combustivel
+WHERE tb_carro.idcombustivel  = tb_combustivel.idcombustivel  
 GROUP BY idCarro
 ORDER BY idCarro;
+
 
 -- Exibe a dimensão dim_carro
 SELECT *
 FROM dim_carro;
 
 
--- Exibe dados que serão da dimensão clientes 
+-- Exibe dados que serão da dimensão vendendor
 SELECT 
 	idVendedor,
 	nomeVendedor,
 	sexoVendedor,
 	estadoVendedor
-FROM tb_locacao
+FROM tb_vendedor tv  
 ORDER BY idVendedor;
 
 -- Cria nova dimensão de vendedores
@@ -196,7 +201,7 @@ SELECT
 		nomeVendedor,
 		sexoVendedor,
 		estadoVendedor
-FROM tb_locacao 
+FROM tb_vendedor 
 GROUP BY idVendedor;
 
 
@@ -207,18 +212,18 @@ FROM dim_vendedor;
 
 -- Exibe dados que serão da dimensão data de locação
 SELECT 
-	substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataLocacao,
-	CAST(strftime('%j', date(substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2))) / 7 AS INTEGER) + 1 AS semanaLocacao,
-	substr(dataLocacao, 7, 2) AS diaLocacao,
-	substr(dataLocacao, 5, 2) AS mesLocacao,
+	dataLocacao,
+	CAST(strftime('%j', date(dataLocacao)) / 7 AS INTEGER) + 1 AS semanaLocacao,
+	substr(dataLocacao, 9, 2) AS diaLocacao,
+	substr(dataLocacao, 6, 2) AS mesLocacao,
 	CASE
-	    WHEN substr(dataLocacao, 5, 2) BETWEEN '01' AND '03' THEN 1
-	    WHEN substr(dataLocacao, 5, 2) BETWEEN '04' AND '06' THEN 2
-	    WHEN substr(dataLocacao, 5, 2) BETWEEN '07' AND '09' THEN 3
+	    WHEN substr(dataLocacao, 6, 2) BETWEEN '01' AND '03' THEN 1
+	    WHEN substr(dataLocacao, 6, 2) BETWEEN '04' AND '06' THEN 2
+	    WHEN substr(dataLocacao, 6, 2) BETWEEN '07' AND '09' THEN 3
 	    ELSE 4
   END AS trimestreLocacao,
 	substr(dataLocacao, 1, 4) AS anoLocacao
-FROM tb_locacao
+FROM tb_locacao_v2 tlv 
 ORDER BY dataLocacao;
 
 -- Cria uma nova dimensão de data de locação
@@ -244,18 +249,18 @@ INSERT INTO dim_dataLocacao (
 	anoLocacao 
 )
 SELECT
-	substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2) AS dataLocacao,
-	CAST(strftime('%j', date(substr(dataLocacao, 1, 4) || '-' || substr(dataLocacao, 5, 2) || '-' || substr(dataLocacao, 7, 2))) / 7 AS INTEGER) + 1 AS semanaLocacao,
-	substr(dataLocacao, 7, 2) AS diaLocacao,
-	substr(dataLocacao, 5, 2) AS mesLocacao,
+		dataLocacao,
+	CAST(strftime('%j', date(dataLocacao)) / 7 AS INTEGER) + 1 AS semanaLocacao,
+	substr(dataLocacao, 9, 2) AS diaLocacao,
+	substr(dataLocacao, 6, 2) AS mesLocacao,
 	CASE
-	    WHEN substr(dataLocacao, 5, 2) BETWEEN '01' AND '03' THEN 1
-	    WHEN substr(dataLocacao, 5, 2) BETWEEN '04' AND '06' THEN 2
-	    WHEN substr(dataLocacao, 5, 2) BETWEEN '07' AND '09' THEN 3
+	    WHEN substr(dataLocacao, 6, 2) BETWEEN '01' AND '03' THEN 1
+	    WHEN substr(dataLocacao, 6, 2) BETWEEN '04' AND '06' THEN 2
+	    WHEN substr(dataLocacao, 6, 2) BETWEEN '07' AND '09' THEN 3
 	    ELSE 4
   END AS trimestreLocacao,
 	substr(dataLocacao, 1, 4) AS anoLocacao
-FROM tb_locacao
+FROM tb_locacao_v2 tlv 
 GROUP BY dataLocacao
 ORDER BY dataLocacao;
 
@@ -265,18 +270,18 @@ FROM dim_dataLocacao;
 
 -- Exibe dados que serão da dimensão data de entrega
 SELECT 
-	substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2) AS dataEntrega,
-	CAST(strftime('%j', date(substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2))) / 7 AS INTEGER) + 1 AS semanaEntrega,
-	substr(dataEntrega, 7, 2) AS diaEntrega,
-	substr(dataEntrega, 5, 2) AS mesEntrega,
+	dataEntrega ,
+	CAST(strftime('%j', date(dataEntrega)) / 7 AS INTEGER) + 1 AS semanaEntrega,
+	substr(dataEntrega, 9, 2) AS diaEntrega,
+	substr(dataEntrega, 6, 2) AS mesEntrega,
 	CASE
-	    WHEN substr(dataEntrega, 5, 2) BETWEEN '01' AND '03' THEN 1
-	    WHEN substr(dataEntrega, 5, 2) BETWEEN '04' AND '06' THEN 2
-	    WHEN substr(dataEntrega, 5, 2) BETWEEN '07' AND '09' THEN 3
+	    WHEN substr(dataEntrega, 6, 2) BETWEEN '01' AND '03' THEN 1
+	    WHEN substr(dataEntrega, 6, 2) BETWEEN '04' AND '06' THEN 2
+	    WHEN substr(dataEntrega, 6, 2) BETWEEN '07' AND '09' THEN 3
 	    ELSE 4
   END AS trimestreEntrega,
 	substr(dataEntrega, 1, 4) AS anoEntrega
-FROM tb_locacao
+FROM tb_locacao_v2 tlv 
 ORDER BY dataEntrega;
 
 -- Cria uma nova dimensão de data de entrega
@@ -302,18 +307,18 @@ INSERT INTO dim_dataEntrega (
 	anoEntrega
 )
 SELECT 
-	substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2) AS dataEntrega,
-	CAST(strftime('%j', date(substr(dataEntrega, 1, 4) || '-' || substr(dataEntrega, 5, 2) || '-' || substr(dataEntrega, 7, 2))) / 7 AS INTEGER) + 1 AS semanaEntrega,
-	substr(dataEntrega, 7, 2) AS diaEntrega,
-	substr(dataEntrega, 5, 2) AS mesEntrega,
+	dataEntrega ,
+	CAST(strftime('%j', date(dataEntrega)) / 7 AS INTEGER) + 1 AS semanaEntrega,
+	substr(dataEntrega, 9, 2) AS diaEntrega,
+	substr(dataEntrega, 6, 2) AS mesEntrega,
 	CASE
-	    WHEN substr(dataEntrega, 5, 2) BETWEEN '01' AND '03' THEN 1
-	    WHEN substr(dataEntrega, 5, 2) BETWEEN '04' AND '06' THEN 2
-	    WHEN substr(dataEntrega, 5, 2) BETWEEN '07' AND '09' THEN 3
+	    WHEN substr(dataEntrega, 6, 2) BETWEEN '01' AND '03' THEN 1
+	    WHEN substr(dataEntrega, 6, 2) BETWEEN '04' AND '06' THEN 2
+	    WHEN substr(dataEntrega, 6, 2) BETWEEN '07' AND '09' THEN 3
 	    ELSE 4
   END AS trimestreEntrega,
 	substr(dataEntrega, 1, 4) AS anoEntrega
-FROM tb_locacao
+FROM tb_locacao_v2 tlv
 GROUP BY dataEntrega
 ORDER BY dataEntrega;
 
