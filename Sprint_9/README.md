@@ -6,11 +6,11 @@
 
 - [Tarefa 2: Modelagem Dimensional - Criação de Modelo](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_9/Tarefa_2.sql)
 
-- Tarefa 3: Desafio Parte 3 - Processamento da Trusted
+- [Tarefa 3: Desafio Parte 3 - Processamento da Trusted](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_9/Desafio_parte_3.ipynb)
 
-- Tarefa 4: Desafio Parte 3 - Modelagem de dados da Refined
+- [Tarefa 4: Desafio Parte 3 - Modelagem de dados da Refined](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_9/Desafio_parte_3.ipynb)
 
-- Tarefa 5: Desafio Parte 3 - Processamento da Refined
+- [Tarefa 5: Desafio Parte 3 - Processamento da Refined](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_9/Desafio_parte_3.ipynb)
 
 ## Desenvolvimento detalhado de cada atividade
 
@@ -47,7 +47,7 @@ Não é obrigatório, mas seria interessante:
 
 **Modelagem logica:**
 
-![Database](Modelagem_logica_database_tarefa_1.png)
+![Database](Prints/Modelagem_logica_database_tarefa_1.png)
 
 
 ### Tarefa 2: Modelagem Dimensional - Criação de Modelo
@@ -77,4 +77,19 @@ Não é obrigatório, mas seria interessante:
 
 **Modelagem dimensional:**
 
-![Database](Modelagem_dimensional_database_tarefa_2.png)
+![Database](Prints/Modelagem_dimensional_database_tarefa_2.png)
+
+### Tarefa 3: Desafio Parte 3 - Processamento da Trusted
+
+Intruções , código e prints constam no notebook: 
+[Desafio_parte_3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_9/Desafio_parte_3.ipynb)
+
+### Tarefa 4: Desafio Parte 3 - Modelagem de dados da Refined
+
+Intruções , código e prints constam no notebook: 
+[Desafio_parte_3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_9/Desafio_parte_3.ipynb)
+
+### Tarefa 5: Desafio Parte 3 - Processamento da Refined
+
+Intruções , código e prints constam no notebook: 
+[Desafio_parte_3](https://github.com/telmacarvalho/programa_de_bolsas_compass/blob/main/Sprint_9/Desafio_parte_3.ipynb)
