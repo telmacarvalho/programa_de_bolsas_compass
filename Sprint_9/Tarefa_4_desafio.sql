@@ -1,7 +1,6 @@
 -- Cria a tabela do fato de movies_superheros
  CREATE TABLE fact_superhero_movies (
   id INTEGER PRIMARY KEY,
-  id_production_company INTEGER,
   release_date INTEGER,
   popularity DECIMAL,
   budget INTEGER,
