@@ -1,7 +1,7 @@
 -- Cria a tabela do fato de movies_superheros
  CREATE TABLE fact_superhero_movies (
   id INTEGER PRIMARY KEY,
-  release_date INTEGER,
+  release_date TEXT,
   popularity DECIMAL,
   budget INTEGER,
   revenue INTEGER,
@@ -41,7 +41,7 @@ FROM fato_superhero_movies;
 -- Cria a dimensão genres
  CREATE TABLE dim_genres (
   id_genre INTEGER PRIMARY KEY,
-  name VARCHAR  
+  genre VARCHAR  
 );
 
 -- Cria a dimensão movies_production_companies
@@ -56,13 +56,13 @@ FROM fato_superhero_movies;
 -- Cria a dimensão production_companies
  CREATE TABLE dim_production_companies (
   id_production_company INTEGER PRIMARY KEY,
-  name VARCHAR,
+  production_company VARCHAR,
   origin_country VARCHAR
 );
 
 -- Cria a dimensão release_dates
  CREATE TABLE dim_release_dates (
-  release_date INTEGER PRIMARY KEY,
+  release_date TEXT PRIMARY KEY,
   year INTEGER,
   month INTEGER,
   day INTEGER  
