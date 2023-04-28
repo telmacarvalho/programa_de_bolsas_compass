@@ -1,17 +1,14 @@
 -- Cria a tabela do fato de movies_superheros
- CREATE TABLE fato_superhero_movies (
-  id_movie INTEGER PRIMARY KEY,
-  id_genre INTEGER,
-  id_production_companie INTEGER,
+ CREATE TABLE fact_superhero_movies (
+  id INTEGER PRIMARY KEY,
+  id_production_company INTEGER,
   release_date INTEGER,
   popularity DECIMAL,
   budget INTEGER,
   revenue INTEGER,
   vote_average DECIMAL,
   vote_count INTEGER,
-  FOREIGN KEY (id_movie) REFERENCES dim_movies(id_movie),
-  FOREIGN KEY (id_genre) REFERENCES dim_genres(id_genre),
-  FOREIGN KEY (id_production_companie) REFERENCES dim_production_companies(id_production_companie),
+  FOREIGN KEY (id) REFERENCES dim_movies(id_movie),
   FOREIGN KEY (release_date) REFERENCES dim_release_dates(release_date)
 );
 
@@ -34,18 +31,34 @@ FROM fato_superhero_movies;
   runtime INTEGER
 );
 
+-- Cria a dimensão movie_genres
+ CREATE TABLE dim_movies_genres (
+  id_movie INTEGER,
+  id_genre INTEGER,
+  PRIMARY KEY (id_genre, id_movie),
+  FOREIGN KEY (id_movie) REFERENCES fact_superhero_movies(id),
+  FOREIGN KEY (id_genre) REFERENCES dim_genres(id_genre)
+);
 
 -- Cria a dimensão genres
  CREATE TABLE dim_genres (
   id_genre INTEGER PRIMARY KEY,
-  genre_name VARCHAR  
+  name VARCHAR  
 );
 
+-- Cria a dimensão movies_production_companies
+ CREATE TABLE dim_movies_production_companies (
+  id_movie INTEGER,
+  id_production_company INTEGER,
+  PRIMARY KEY (id_movie, id_production_company),
+  FOREIGN KEY (id_movie) REFERENCES fact_superhero_movies(id),
+  FOREIGN KEY (id_production_company) REFERENCES dim_production_companies(id_production_company)
+);
 
 -- Cria a dimensão production_companies
  CREATE TABLE dim_production_companies (
-  id_production_companie INTEGER PRIMARY KEY,
-  production_companie_name VARCHAR,
+  id_production_company INTEGER PRIMARY KEY,
+  name VARCHAR,
   origin_country VARCHAR
 );
 
