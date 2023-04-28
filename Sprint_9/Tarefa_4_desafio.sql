@@ -63,8 +63,8 @@ FROM fato_superhero_movies;
 -- Cria a dimensão release_dates
  CREATE TABLE dim_release_dates (
   release_date INTEGER PRIMARY KEY,
-  release_date_year INTEGER,
-  release_date_month INTEGER,
-  release_date_day INTEGER  
+  year INTEGER,
+  month INTEGER,
+  day INTEGER  
 );
 
