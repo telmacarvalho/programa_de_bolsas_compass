@@ -24,8 +24,7 @@ FROM fato_superhero_movies;
   id_movie INTEGER PRIMARY KEY,
   title VARCHAR,
   tagline VARCHAR,
-  original_language VARCHAR,
-  spoken_language VARCHAR,
+  original_languages VARCHAR,
   overview VARCHAR,
   runtime INTEGER
 );
