@@ -105,8 +105,8 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 ## SPRINT 10
 
-- [ ] Publish and Share dashboards (*in progress*)
+- [ ] Complete Introduction to AWS QuickSight (*in progress*)
 
-- [ ] Fundamentos de Visualização de Dados
+- [ ] Workshop de QuickSight para Autores (*in progress*)
 
 - [ ] Data & Analytics - PB - AWS 10/10 (*in progress*)
