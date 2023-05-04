@@ -102,3 +102,11 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 ## [SPRINT 9](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint_9)
 
 - [x] Data & Analytics - PB - AWS 9/10 
+
+## SPRINT 10
+
+- [ ] Publish and Share dashboards (*in progress*)
+
+- [ ] Fundamentos de Visualização de Dados
+
+- [ ] Data & Analytics - PB - AWS 10/10 (*in progress*)
