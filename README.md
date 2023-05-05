@@ -105,7 +105,7 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 ## SPRINT 10
 
-- [ ] Complete Introduction to AWS QuickSight (*in progress*)
+- [x] Complete Introduction to AWS QuickSight
 
 - [ ] Workshop de QuickSight para Autores (*in progress*)
 
