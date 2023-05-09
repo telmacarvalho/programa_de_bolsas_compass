@@ -32,4 +32,6 @@ Certifique-se que os dados consumidos estejam na versão final para evitar retra
 
 </details>
 
-![Dashboard](Dasboard.png)
+**Dashboard:**
+
+![Dashboard](Dashboard.png)
