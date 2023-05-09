@@ -29,3 +29,7 @@ Seu dashboard deve conter, no mínimo 3 tipos de gráficos diferentes.
 - publicar seus dashboards, compartilhando-os com seu monitor
 
 Certifique-se que os dados consumidos estejam na versão final para evitar retrabalho.
+
+</details>
+
+[Dashboard]()
