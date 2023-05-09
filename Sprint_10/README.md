@@ -35,3 +35,8 @@ Certifique-se que os dados consumidos estejam na versão final para evitar retra
 **Dashboard:**
 
 ![Dashboard](Dashboard.png)
+
+**Datasets:**
+
+![Dashboard](Dataset_movies.png)
+![Dashboard](Dataset_companies.png)
