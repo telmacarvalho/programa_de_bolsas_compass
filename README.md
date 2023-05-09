@@ -103,10 +103,10 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 - [x] Data & Analytics - PB - AWS 9/10 
 
-## SPRINT 10
+## [SPRINT 10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint_10)
 
 - [x] Complete Introduction to AWS QuickSight
 
-- [ ] Workshop de QuickSight para Autores (*in progress*)
+- [x] Workshop de QuickSight para Autores
 
-- [ ] Data & Analytics - PB - AWS 10/10 (*in progress*)
+- [ ] [Data & Analytics - PB - AWS 10/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint_10) (*in progress*)
