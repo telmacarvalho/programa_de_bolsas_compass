@@ -109,4 +109,4 @@ O curso é composto por uma **trilha de aprendizagem**, a qual propicia a aprend
 
 - [x] Workshop de QuickSight para Autores
 
-- [ ] [Data & Analytics - PB - AWS 10/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint_10) (*in progress*)
+- [x] [Data & Analytics - PB - AWS 10/10](https://github.com/telmacarvalho/programa_de_bolsas_compass/tree/main/Sprint_10)
